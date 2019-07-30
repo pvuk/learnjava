@@ -18,7 +18,7 @@ public class ReverseIntNumberWithoutUsingJavaPredefinedMethods {
 		while(reverse > 0) {
 			lastNum = lastNum * 10 + reverse % 10;// % gets remainder
 			log.info("Reverse: {}", reverse);
-			reverse /= 10;// 2489 divide by 10 results 248.9 as return type is integer, it takes 248 as a result
+			reverse /= 10;// 2489 divide by 10 results 248.9, the return type is integer, it takes 248 as a result
 		}
 		log.info("LastNum: {}", lastNum);
 	}
