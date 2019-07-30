@@ -45,7 +45,7 @@ public class ReadAndPrintExcelFile {
 						System.out.println("RowNumber: "+ rowCount +", CellData: "+ cellData +", CellNumber: "+ columnNum);
 						//Reading data from Excel upto 6 rows only
 //						if (rowCount == 6) {
-							//rowCount == 1 Headers Section(User ID, User Name)
+							//rowCount == 1 Headers Section(User ID, User Name)  is not reading
 							if (rowCount > 1) {
 								if (columnNum == 0) {
 									key = cellData;//User ID
