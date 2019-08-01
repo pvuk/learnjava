@@ -23,5 +23,14 @@
 	<classpathentry kind="lib" path="lib/jackson-json/jackson-annotations-2.9.8.jar"/>
 	<classpathentry kind="lib" path="lib/jackson-json/jackson-core-2.9.8.jar"/>
 	<classpathentry kind="lib" path="lib/jackson-json/jackson-databind-2.9.8.jar"/>
+	<classpathentry kind="lib" path="lib/upload/apche/commons-compress-1.18.jar"/>
+	<classpathentry kind="lib" path="lib/upload/apche/ooxml-schemas-1.4.jar"/>
+	<classpathentry kind="lib" path="lib/upload/apche/poi-4.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/upload/apche/poi-ooxml-4.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/upload/apche/xmlbeans-3.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/upload/pdf/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/upload/pdf/fontbox-2.0.16.jar"/>
+	<classpathentry kind="lib" path="lib/upload/pdf/pdfbox-2.0.16.jar"/>
+	<classpathentry kind="lib" path="lib/upload/xlsx-streamer-2.1.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
