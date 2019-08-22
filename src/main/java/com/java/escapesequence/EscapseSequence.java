@@ -14,6 +14,6 @@ public class EscapseSequence {
 		log.info("printing slach(\\)r(\\)n(\\)n value: {} in log.", "\r\n\n");
 		String lineSeparator = new StringBuilder().append(System.lineSeparator()).toString();// why \r\n in windows not appending
 		log.info("Printing lineSeparator: " + lineSeparator + ""
-				+ System.lineSeparator() + " in OS: " + System.getProperty("os.name"));
+				+ System.lineSeparator() + " in OS: " + System.getProperty("os.name"));// it will give you appropriate to the OS
 	}
 }
