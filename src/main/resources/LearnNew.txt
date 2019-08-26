@@ -1,0 +1,10 @@
+1. Learn different types of format a data using a class Formatter
+Reference: https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Formatter.html#dls
+
+2. Read model class and write @Field(value="REWARD_POINTS_REDEEM_ID", order = 1)(import org.springframework.data.mongodb.core.mapping.Field;) upon every datatype;
+2.1 Steps
+2.2 private String rewardPointsRedeemId;
+2.3 Read the variable name and differentiate with underscore when capital word is found. 
+	Final output: @Field(value="REWARD_POINTS_REDEEM_ID", order = 1)
+2.4 order count will be increased in ascending order
+2.5 How to do: Swing Applet is better to work on this Task

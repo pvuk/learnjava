@@ -29,11 +29,11 @@ public class PassByValue {
 	public static void main(String[] args) {
 		PassByValue pnt1 = new PassByValue(0, 0);
 		PassByValue pnt2 = new PassByValue(0, 0);
-		System.out.println("X: " + pnt1.x + " Y: " + pnt1.y);
-		System.out.println("X: " + pnt2.x + " Y: " + pnt2.y);
+		System.out.println("X: " + pnt1.x + " Y: " + pnt1.y);//X: 0 Y: 0
+		System.out.println("X: " + pnt2.x + " Y: " + pnt2.y);//X: 0 Y: 0
 		System.out.println(" ");
 		tricky(pnt1, pnt2);
-		System.out.println("X: " + pnt1.x + " Y:" + pnt1.y);
-		System.out.println("X: " + pnt2.x + " Y: " + pnt2.y);
+		System.out.println("X: " + pnt1.x + " Y:" + pnt1.y);//X: 100 Y: 50
+		System.out.println("X: " + pnt2.x + " Y: " + pnt2.y);//X: 0 Y: 0
 	}
 }
