@@ -21,7 +21,7 @@ package com.java.polymorphism.runtime.examples;
  */
 public class MethodOverridingDevice {
 	
-	public long totalStandByTime(long standByTime) throws ArithmeticException{
+	protected long totalStandByTime(long standByTime) throws ArithmeticException{
 		return standByTime;
 	}
 }
