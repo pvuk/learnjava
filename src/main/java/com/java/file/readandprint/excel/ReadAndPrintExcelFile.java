@@ -1,4 +1,4 @@
-package com.java.file.excel;
+package com.java.file.readandprint.excel;
 
 import java.io.FileInputStream;
 import java.util.HashMap;
@@ -17,7 +17,7 @@ import com.monitorjbl.xlsx.StreamingReader;
  * @author udaykiran p
  *
  */
-public class ReadExcelFile {
+public class ReadAndPrintExcelFile {
 	
 	public static void main(String[] args) {
 		try {
@@ -45,7 +45,7 @@ public class ReadExcelFile {
 						System.out.println("RowNumber: "+ rowCount +", CellData: "+ cellData +", CellNumber: "+ columnNum);
 						//Reading data from Excel upto 6 rows only
 //						if (rowCount == 6) {
-							//rowCount == 1 Headers Section(User ID, User Name)
+							//rowCount == 1 Headers Section(User ID, User Name)  is not reading
 							if (rowCount > 1) {
 								if (columnNum == 0) {
 									key = cellData;//User ID
