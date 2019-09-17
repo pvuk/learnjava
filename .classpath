@@ -19,5 +19,8 @@
 	<classpathentry kind="lib" path="lib/lombok-slf4j/slf4j-log4j12-1.7.12.jar"/>
 	<classpathentry kind="lib" path="lib/commons-io-1.3.2.jar"/>
 	<classpathentry kind="lib" path="lib/json-20180813.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-json/jackson-annotations-2.9.8.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-json/jackson-core-2.9.8.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-json/jackson-databind-2.9.8.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
