@@ -1,7 +1,6 @@
 package com.java.designpatterns.builder;
 
 import lombok.Data;
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * 
@@ -74,7 +73,7 @@ import lombok.extern.slf4j.Slf4j;
  * 
  * 
  * 		<h1>-------------------------------------------------------------------------------------</h1>
- *         </br>
+ *         <br>
  * 
  *         <h1><a href=
  *         "https://dzone.com/articles/the-builder-pattern-for-class-with-many-constructo">What
@@ -106,7 +105,6 @@ import lombok.extern.slf4j.Slf4j;
  *         </ol>
  */
 @Data
-@Slf4j
 public class Student {
 	
 	private final String firstName;//required
@@ -123,10 +121,13 @@ public class Student {
 		this.address = builder.address;
 	}
 	
+	//Builder class
 	public static class StudentBuilder {
 		
+		//required parameters
 		private final String firstName;
 		private final String lastName;
+		//optional parameters
 		private int age;
 		private String phone;
 		private String address;
@@ -152,9 +153,8 @@ public class Student {
 		}
 		
 		public Student build() throws Exception {
-			Student student = new Student(this);
 			validateStudent();
-			return student;
+			return new Student(this);
 		}
 
 		private void validateStudent() throws Exception {
@@ -165,15 +165,5 @@ public class Student {
 				throw new Exception("Last Name is required field");
 			}
 		}
-	}
-	
-	
-	
-	public static void main(String[] args) throws Exception {
-		/*
-		 * passing required parameters is mandatory and if optional are not passed they
-		 * are assigned with their default values.
-		 */
-		log.info("{}", new Student.StudentBuilder("Udaykiran", "P").build());
 	}
 }

@@ -4,7 +4,7 @@ package com.java.statickeyword.example;
  * 
  * @author venkataudaykiranp
  *
- *</br>
+ *<br>
  *<b>Ref: </b><a href="https://www.geeksforgeeks.org/static-keyword-java/">Static variables</a>
  *<h1>Static variables</h1>
 
@@ -42,7 +42,7 @@ class ExecutionOrderOfStaticBlocksAndVariables
     // static method(main !!) 
     public static void main(String[] args) 
     { 
-       System.out.println("Value of a : "+a); 
+       System.out.println("Value of a : "+a);
        System.out.println("from main"); 
     } 
   
