@@ -1,4 +1,4 @@
-package com.java.generics.examples;
+package com.java.formula.generics.examples;
 /**
  * 
  * @author VenkataUdayKiranP
