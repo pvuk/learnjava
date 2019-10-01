@@ -7,7 +7,11 @@ public class PostAndPreIncrementExample {
 	public static void main(String[] args) {
 		int i = 0, j = 0;
 		log.info("i: {}, i++: {}", i, i++);
+		log.info("i value now assigned to i variable., i: {}", i);
+		
 		log.info("j: {}, ++j: {}", j, ++j);
+		log.info("j value assigned to j pre increment., no changes in j varialbe j: {}", j);
+		
 		int kLoop = 5;
 		log.info("K Loop times: {}", kLoop);
 		for (int k = 0; k < kLoop; k++) {
