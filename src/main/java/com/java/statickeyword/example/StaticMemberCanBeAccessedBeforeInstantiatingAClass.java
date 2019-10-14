@@ -17,7 +17,7 @@ To create a static member(block,variable,method,nested class), precede its decla
 When a member is declared static, it can be accessed before any objects of its class are created, and without reference to any object. 
 For example, in below java program, we are accessing static method m1() without creating any object of Test class.
 
-</br>
+<br>
 <b>Output:</b>
 
 <code>from m1</code>
@@ -35,6 +35,14 @@ class StaticMemberCanBeAccessedBeforeInstantiatingAClass
     { 
         System.out.println("from m1"); 
     } 
+    
+    /*
+     * 1. constructor is not initialized because any object instance called
+     * 2. By running static blocks /methods /variables in java constructors are not initialized 
+     */
+    public StaticMemberCanBeAccessedBeforeInstantiatingAClass() {
+		System.out.println("constructor calling");
+	}
   
     public static void main(String[] args) 
     { 

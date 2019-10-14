@@ -8,6 +8,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Date;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class ReadFileAndReplaceOldTextwithNewTextOnCondition {
 	
 	private String customerName;
@@ -22,8 +25,10 @@ public class ReadFileAndReplaceOldTextwithNewTextOnCondition {
 	private String assign_to;
 	
 	public static void main(String[] args) {
-		String filePath = "D:\\workspace\\learn-git\\javaproject_v1\\src\\main\\java\\com\\java\\file\\readandwrite\\ReadFileAndReplaceOldTextwithNewTextOnCondition.java";
+		String filePath = System.getProperty("user.dir")
+				+ "/src/main/java/com/java/file/readandwrite/ReadFileAndReplaceOldTextwithNewTextOnCondition.java";
 		File fileToBeModified = new File(filePath);
+		log.info("FilePath: "+ fileToBeModified.getAbsolutePath());
 		BufferedReader reader = null;
 		FileWriter writer = null;
 		try {

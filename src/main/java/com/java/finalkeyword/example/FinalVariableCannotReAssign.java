@@ -4,7 +4,7 @@ package com.java.finalkeyword.example;
  * 
  * @author venkataudaykiranp
  *
- *</br>
+ *<br>
  *<b>Ref: </b><a href="https://www.geeksforgeeks.org/final-keyword-java/">final keyword in java</a>
  *<p>
  *	a final variable cannot be reassign, doing it will throw compile-time error.

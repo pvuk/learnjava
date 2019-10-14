@@ -9,9 +9,11 @@ import org.json.JSONObject;
 
 public class GetArrayObjectFromJsonText {
 	public static void main(String[] args) {
+		
 		String jsonText;
 		try {
-		    jsonText = IOUtils.toString(new FileInputStream(new File("C:\\Users\\venkataudaykiranp\\Downloads\\Json.txt")));
+			String projectPath = System.getProperty("user.dir");
+		    jsonText = IOUtils.toString(new FileInputStream(new File(projectPath +"/src/main/resources/JSON/Json.txt")));
 		    /*or*/
 //		    jsonText = "\"{\"gutter_url\":\"\", \"result\":[{\"album_sort\":\"Wall, The\",\"release_year\":1979,\"afs\":\"Y\"}],\"sort_order\":\"popularity\"}\"";
 		    int i = jsonText.indexOf("{");
