@@ -1,4 +1,4 @@
-package com.java.exception;
+package com.java.exception.throwkeyword;
 
 /**
  * Explanation: You can see that while throwing custom exception I gave a string
@@ -11,6 +11,9 @@ package com.java.exception;
  */
 public class UserDefinedNullPointerExceptionExample {
 
+	/*
+	 * If we didn't catch the exception then compilation error saying that 'Unhandled exception type UserDefinedNullPointerException'.
+	 */
 	public static void main(String[] args) {
 		try {
 			System.out.println("try block");
