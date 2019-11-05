@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
  * 
  * <p>
  * This is very simple, which creates the simple thread puts it run in forever with use of while loop and makes use of sleep method to put the interval between running.
-	</br>
+	<br>
 	This is simply fast and quick way to achieve it
 	</p>
  *
