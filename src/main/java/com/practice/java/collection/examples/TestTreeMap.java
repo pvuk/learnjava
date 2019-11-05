@@ -1,8 +1,14 @@
-package com.java.collection.examples;
+package com.practice.java.collection.examples;
 
 import java.util.Map.Entry;
 import java.util.TreeMap;
 
+/**
+ * https://dzone.com/articles/hashmap-vs-treemap-vs
+ * 
+ * @author venkataudaykiranp
+ *
+ */
 public class TestTreeMap {
 	public static void main(String[] args) {
 		Dog2 d1 = new Dog2("red", 30);
