@@ -7,7 +7,8 @@ public class InterviewWhatIsTheOutput {
 	public static void main(String[] args) {
 		A a = new A();
 		A b = new B();
-		log.info("{}, {}", b.i, a.i);
+		log.info("Output: {}, {}", a.i, b.i);
+		//Why output is 5, 5
 	}
 }
 
