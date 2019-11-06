@@ -7,8 +7,9 @@ public class InterviewWhatIsTheOutput {
 	public static void main(String[] args) {
 		A a = new A();
 		A b = new B();
-		log.info("Output: {}, {}", a.i, b.i);
-		//Why output is 5, 5
+		A c = new C();
+		log.info("Output: {}, {}, {}", a.i, b.i, c.i);
+		//Why output is 5, 5,5
 	}
 }
 
@@ -25,5 +26,13 @@ class B extends A{
 	public int i = 10;
 	public void printMethod(){
 		log.info("Calling Printmethod in B");
+	}
+}
+
+@Slf4j
+class C extends B {
+	public int i = 15;
+	public void printMethod(){
+		log.info("Calling Printmethod in C");
 	}
 }
