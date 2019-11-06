@@ -30,7 +30,7 @@ public class StaticMethod {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println("Static value Accessing using Static instance: "+ getData(StaticMethod.value));
+		System.out.println("Static value Accessing without creating object instance: "+ getData(StaticMethod.value));
 		System.out.println("Non-Static value Accessing using instance: "+ getData(new StaticMethod().value2));
 		System.out.println("Static Method Access without Class Instance: "+ StaticMethod.getData(value));
 		

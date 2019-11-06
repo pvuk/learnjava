@@ -4,7 +4,7 @@ package com.java.interview.productbased.adp;
  * 
  * @author venkataudaykiranp
  *
- * </br>
+ * <br>
  * <b>Ref:</b> <a href="http://www.c4learn.com/java/java-default-values/">Java default values</a>
  */
 public class DefaultValue {

@@ -10,6 +10,8 @@ import java.util.Map;
  * access to the HashMap keys and we are creating the key again to retrieve the
  * data, you will notice that hash code values of both the objects are different
  * and hence value is not found.
+ * 
+ * <a href="https://www.journaldev.com/21095/java-equals-hashcode">Java equals() and hashCode()</a>
  *
  */
 public class HashingTest {
