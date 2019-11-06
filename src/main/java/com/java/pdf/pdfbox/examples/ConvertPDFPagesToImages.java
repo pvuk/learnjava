@@ -1,4 +1,4 @@
-package com.pdf.pdfbox.examples;
+package com.java.pdf.pdfbox.examples;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
