@@ -3,7 +3,7 @@ package com.java.interview.productbased.adp;
 import java.util.Scanner;
 
 /**
- * Write a program to print 1...n numbers using recursion. F2F at ADP
+ * F2F at ADP -> Write a program to print 1...n numbers sum using recursion.
  * 
  * @author Priyanka
  *
