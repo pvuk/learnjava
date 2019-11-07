@@ -12,27 +12,20 @@ public class GetMaxAndMinValueInArray {
 	public static void main(String[] args) {
 		int[] array = {10,25,4,25,46,84,42};
 		System.out.println("Array: "+ Arrays.toString(array));
-		System.out.println("Max value: "+ getMax(array));
-		System.out.println("Min value: "+ getMin(array));
+		usingForLoop(array);
 	}
 
-	private static int getMin(int[] array) {
-		int minValue = array[0];
+	private static void usingForLoop(int[] array) {
+		int minValue = array[0], maxValue = array[0];
 		for (int i = 1; i < array.length; i++) {
 			if (array[i] < minValue) {
 				minValue = array[i];
 			}
-		}
-		return minValue;
-	}
-
-	private static int getMax(int[] array) {
-		int maxValue = array[0];
-		for (int i = 1; i < array.length; i++) {
 			if (array[i] > maxValue) {
 				maxValue = array[i];
 			}
 		}
-		return maxValue;
+		
+		System.out.println("Min value: "+ minValue +", Max value: "+ maxValue);
 	}
 }
