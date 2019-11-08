@@ -30,6 +30,7 @@ public class GetMaxAndMinValueInArray {
 		};
 		System.out.println("List Numbers: "+ allIds);
 		System.out.println("Max Num: "+ allIds.stream().max((Long l1, Long l2) -> l1.compareTo(l2)).get());
+		System.out.println("Min Num: "+ allIds.stream().min((Long l1, Long l2) -> l1.compareTo(l2)).get());
 	}
 
 	private static void usingForLoop(int[] array) {
