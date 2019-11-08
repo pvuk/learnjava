@@ -21,6 +21,9 @@ public class PrintNumbers {
 		 */
 		System.out.printf("Checking even loop: %b%n", !isOdd);
 //		log.info("Checking even loop: {}", !isOdd);
+		/*
+		 * below loop is not handled
+		 */
 		while (!isOdd) {
 			try {
 				System.out.println("Even waiting: " + number);
@@ -51,6 +54,9 @@ public class PrintNumbers {
 		}
 		System.out.printf("Checking odd loop: %b%n", isOdd);
 //		log.info("Checking odd loop: {}", isOdd);
+		/*
+		 * below loop is not handled
+		 */
 		while (isOdd) {
 			try {
 				System.out.println("Odd waiting : " + number);

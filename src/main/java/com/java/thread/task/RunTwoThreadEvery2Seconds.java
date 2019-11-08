@@ -13,20 +13,20 @@ import lombok.extern.slf4j.Slf4j;
  * 
  * <p>
  * In RunSingleThreadEvery2Seconds.java method we saw was very quickest possible, but it lacks some functionality
-</br>
+<br>
 This has much more benefits than previous they are as follows
-</br>
+<br>
 <ul>
 <li>control over when start and cancel task</li>
 <li>first execution can be delayed if wanted, provides useful</li>
 </ul>
-</br>
+<br>
 In this we use, Timer class for scheduling purpose and TimerTask is used for enclosing task to be executed inside its run() method.
-</br>
+<br>
 Timer instance can be shared to schedule the multiple task and it is thread-safe.
-</br>
+<br>
 When Timer constructor is called , it creates one thread and this single thread is used any scheduling of task.
-</br>
+<br>
 For our purpose, we use Timer#scheduleAtFixedRate
  * </p>
  *

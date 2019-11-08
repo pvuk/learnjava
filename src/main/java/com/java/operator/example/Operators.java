@@ -67,7 +67,7 @@ import lombok.extern.slf4j.Slf4j;
  * </tbody>
  * </table>
  * </p>
- * </br>
+ * <br>
  * <h1>==========================================================</h1>
  * <p>
  * <a href="https://www.geeksforgeeks.org/bitwise-operators-in-java/">Bitwise operators in Java</a>
