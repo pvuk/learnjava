@@ -24,7 +24,9 @@ public class CommonNumbersInArray {
 				}
 			}
 		}
-		System.out.println(list.stream().map(String::valueOf).collect(Collectors.joining(",")));
+		System.out.println(list.stream()
+				.map(String::valueOf)
+				.collect(Collectors.joining(",")));
 	}
 
 	private static void usingLambda(int[] a, int[] b) {
