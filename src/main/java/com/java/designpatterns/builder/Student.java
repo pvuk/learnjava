@@ -4,9 +4,7 @@ import lombok.Data;
 
 /**
  * 
- * @author venkataudaykiranp
- * 
- *         <h1><a href=
+ * <h1><a href=
  *         "https://www.journaldev.com/1425/builder-design-pattern-in-java">Builder
  *         Design Pattern</a></h1>
  *         <p>
@@ -101,8 +99,12 @@ import lombok.Data;
  *         constructor.</li>
  *         <li>The Student class has only getter methods and no public
  *         constructor. So, the only way to get an Student object is through the
- *         nested EmpolyeeBuilder class.</li>
+ *         nested StudentBuilder class.</li>
  *         </ol>
+ *         
+ * @author venkataudaykiranp
+ * 
+ *         
  */
 @Data
 public class Student {
