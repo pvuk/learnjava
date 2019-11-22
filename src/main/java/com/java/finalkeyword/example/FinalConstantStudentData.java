@@ -14,7 +14,7 @@ package com.java.finalkeyword.example;
  * initialize this value during object creation like this:
  * </p>
  * 
- * @author Priyanka
+ * @author P V UdayKiran
  *
  * @Date: Fri 22-Nov-2019 20:26
  */
