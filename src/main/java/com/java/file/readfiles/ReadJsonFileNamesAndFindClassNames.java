@@ -8,6 +8,7 @@ import java.nio.file.Paths;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import org.apache.commons.io.FileUtils;
 import org.springframework.util.ResourceUtils;
 
 import com.fasterxml.jackson.databind.JavaType;
@@ -19,6 +20,8 @@ import com.fasterxml.jackson.databind.type.TypeFactory;
  * @Date Thu 28-Nov-2019 12:29
  */
 public class ReadJsonFileNamesAndFindClassNames {
+	String basePackage = "com.spring.transaction.model";
+	
 	public static void main(String[] args) {
 		insertCodeDocumentsFromJSON();
 //		convertFileNameIntoClassName();
@@ -39,23 +42,20 @@ public class ReadJsonFileNamesAndFindClassNames {
 	}
 	
 	/**
-	 * <a href="https://www.programcreek.com/java-api-examples/?api=com.fasterxml.jackson.databind.JavaType>Java Code Examples for com.fasterxml.jackson.databind.JavaType</a>
+	 * <a href="https://www.programcreek.com/java-api-examples/?api=com.fasterxml.jackson.databind.JavaType">Java Code Examples for com.fasterxml.jackson.databind.JavaType</a>
 	 */
-//	JavaType typeFromId(String id, TypeFactory typeFactory) throws IllegalStateException {
-//	    String className = basePackage + "." + generateClassName(id);
-//	    try {
-//	        return typeFactory.constructType(typeFactory.findClass(className));
-//	    } catch (ClassNotFoundException ex) {
-//	        throw new IllegalStateException("Could not find event class for type " + id, ex);
-//	    }
-//	}
+	JavaType typeFromId(String id, TypeFactory typeFactory) throws IllegalStateException {
+		String className = basePackage + "." + id;
+	    try {
+	        return typeFactory.constructType(typeFactory.findClass(className));
+	    } catch (ClassNotFoundException ex) {
+	        throw new IllegalStateException("Could not find event class for type " + id, ex);
+	    }
+	}
 	 
-//	private String generateClassName(String id) {
-//        return PREFIX + id + SUFFIX;
-//    }
-	
 	private static void insertCodeDocumentsFromJSON() {
-		String resourceLocation = "D:\\uday\\Workspace\\2019-09\\learn git\\spring_boot_demo\\target\\classes\\json";
+//		String resourceLocation = "D:\\uday\\Workspace\\2019-09\\learn git\\spring_boot_demo\\target\\classes\\json";
+		String resourceLocation = "D:\\Workspace\\2019-09\\Practice\\spring_boot_demo\\src\\main\\resources\\json";
 		try {
 			File file = ResourceUtils.getFile(resourceLocation);
 			String insertFilesFolder = "put";
@@ -81,6 +81,12 @@ public class ReadJsonFileNamesAndFindClassNames {
 						String collectionName = fileName.substring(fileName.indexOf("-") + 1, fileName.lastIndexOf(".")).toUpperCase();
 						System.out.println("Reading JSON file: "+ jsonFile +", Insert data into: "+ collectionName);
 						
+						try {
+							String jsonString = FileUtils.readFileToString(new File(jsonFile.getAbsolutePath()), "UTF-8");
+							System.out.println(jsonString);
+						} catch (IOException e) {
+							e.printStackTrace();
+						}
 						
 						//Example 2
 //						try {
