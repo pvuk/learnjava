@@ -9,13 +9,13 @@ import java.util.stream.Collectors;
  * @author venkataudaykiranp
  * @Date Tue 03-Dec-2019 08:57
  */
-public class SecondHeighestNumberFromIntArray {
+public class SecondHighestNumberFromIntArray {
 	public static void main(String[] args) {
 		int[] arr = { 100, 14, 26, 94, 15, 16, 25, 94, 56, 41, 58, 94, 66, 86, 84, 9 };
 
 		List<Integer> list = Arrays.stream(arr).sorted().boxed().collect(Collectors.toList());
 //		List<Integer> list = IntStream.of(arr).boxed().collect(Collectors.toList());
-		System.out.println("Second Heighest Number Using Java8 Arrays Stream: " + list.get(list.size() - 2));
+		System.out.println("Second Highest Number from int[] Using Java8 Arrays Stream: " + list.get(list.size() - 2));
 
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = i; j < arr.length; j++) {
@@ -36,6 +36,6 @@ public class SecondHeighestNumberFromIntArray {
 				}
 			}
 		}
-		System.out.println("Second Height Number Using Inner forloop: "+ arr[arr.length - 2]);
+		System.out.println("Second Highest Number from int[] Using Inner forloop: "+ arr[arr.length - 2]);
 	}
 }
