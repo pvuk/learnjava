@@ -2,6 +2,11 @@ package com.java.convert.array;
 
 import java.util.Arrays;
 
+/**
+ * 
+ * @author venkataudaykiranp
+ * @Date Tue 03-Dec-2019 17:19
+ */
 public class ConvertIntToIntArray {
 	public static void main(String[] args) {
 		int number = 2489;
