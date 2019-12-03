@@ -12,7 +12,8 @@ import java.util.stream.Collectors;
 public class SecondHighestNumberFromIntArray {
 	public static void main(String[] args) {
 		int[] arr = { 100, 14, 26, 94, 15, 16, 25, 94, 56, 41, 58, 94, 66, 86, 84, 9 };
-
+		System.out.println("Array: "+ Arrays.toString(arr) +", size: "+ arr.length);
+		
 		List<Integer> list = Arrays.stream(arr).sorted().boxed().collect(Collectors.toList());
 //		List<Integer> list = IntStream.of(arr).boxed().collect(Collectors.toList());
 		System.out.println("Second Highest Number from int[] Using Java8 Arrays Stream: " + list.get(list.size() - 2));
@@ -22,7 +23,7 @@ public class SecondHighestNumberFromIntArray {
 				/**
 				 * 1. Exception handling ArrayIndexOutOfBoundsException
 				 * 2. if(j < arr.length-1) to check last before index position arr[j+1]
-				 * 
+				 * 3. if array size = 16, index start from 0 to 15
 				 */
 				if(j < arr.length-1) {
 					int temp;
