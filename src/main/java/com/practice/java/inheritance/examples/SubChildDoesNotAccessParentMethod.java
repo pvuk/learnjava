@@ -1,14 +1,14 @@
 package com.practice.java.inheritance.examples;
 
-class one 
+class One 
 { 
     public void print_geek() 
     { 
-        System.out.println("Geeks"); 
+        System.out.println("Geeks."); 
     } 
 } 
   
-class two extends one 
+class Two extends One
 { 
     public void print_for() 
     { 
@@ -16,7 +16,7 @@ class two extends one
     } 
 } 
   
-class three extends two 
+class Three extends Two 
 { 
     public void print_geek() 
     { 
@@ -25,13 +25,13 @@ class three extends two
 } 
   
 // Drived class 
-public class Main 
+public class SubChildDoesNotAccessParentMethod 
 { 
     public static void main(String[] args) 
     { 
-        three g = new three(); 
+        Three g = new Three(); 
         g.print_geek(); 
         g.print_for(); 
-        g.print_geek(); 
+        g.print_geek();//** Sub child class doesn't access Parent class(One) method print_geek
     } 
 } 
