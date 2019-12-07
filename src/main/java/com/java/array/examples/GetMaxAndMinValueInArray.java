@@ -19,6 +19,11 @@ public class GetMaxAndMinValueInArray {
 		usingForLoop(array);
 
 		List<Long> allIds = new ArrayList<Long>() {
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
 			{
 				add(1L);
 				add(10L);
@@ -28,9 +33,30 @@ public class GetMaxAndMinValueInArray {
 				add(51L);
 			}
 		};
-		System.out.println("List Numbers: "+ allIds);
-		System.out.println("Max Num: "+ allIds.stream().max((Long l1, Long l2) -> l1.compareTo(l2)).get());
-		System.out.println("Min Num: "+ allIds.stream().min((Long l1, Long l2) -> l1.compareTo(l2)).get());
+		System.out.println("List Of Long Numbers: " + allIds);
+		System.out.println("Using Lambda Expression");
+		System.out.println("Max Num: " + allIds.stream().max((Long l1, Long l2) -> l1.compareTo(l2)).get());
+		System.out.println("Min Num: " + allIds.stream().min((Long l1, Long l2) -> l1.compareTo(l2)).get());
+
+		List<Integer> numbers = new ArrayList<Integer>() {
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
+			{
+				add(1);
+				add(5);
+				add(8);
+				add(2);
+				add(10);
+				add(6);
+			}
+		};
+		Integer max = numbers.stream().max((Integer i1, Integer i2) -> i1.compareTo(i2)).get();
+		Integer min = numbers.stream().min((Integer i1, Integer i2) -> i1.compareTo(i2)).get();
+		System.out.println("List Of Integer Numbers: " + numbers);
+		System.out.println("Min value: " + min + ", Max value: " + max);
 	}
 
 	private static void usingForLoop(int[] array) {
@@ -43,7 +69,7 @@ public class GetMaxAndMinValueInArray {
 				maxValue = array[i];
 			}
 		}
-
+		System.out.println("Without using Java predefined methods");
 		System.out.println("Min value: " + minValue + ", Max value: " + maxValue);
 	}
 }
