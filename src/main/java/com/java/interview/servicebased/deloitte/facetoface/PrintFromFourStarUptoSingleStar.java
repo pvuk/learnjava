@@ -16,11 +16,28 @@ package com.java.interview.servicebased.deloitte.facetoface;
 public class PrintFromFourStarUptoSingleStar {
 	public static void main(String[] args) {
 		int n = 4;
+		usingForLoopWithInnserForLoopInDecreasingNumber(n);
 		usingForLoopWithInnerForLoop(n);
 		usingForLoopWithInnerWhileLoop(n);
 		usingWhileLoopWithInnerForLoop(n);
 		usingDoWhileLoopWithInnerForLoop(n);
 		usingDoWhileLoopWithInnerWhileLoop(n);
+	}
+
+	/**
+	 * @author P V UdayKiran
+	 *
+	 * @Date: Thu 05-Dec-2019 20:42
+	 * @param n
+	 */
+	private static void usingForLoopWithInnserForLoopInDecreasingNumber(int n) {
+		System.out.println("usingForLoopWithInnserForLoopInDecreasingNumber");
+		for(int i = n; i > 0; i--) {
+			for(int j = i; j > 0; j--) {
+				System.out.print("*");
+			}
+			System.out.println("");
+		}
 	}
 
 	/**
