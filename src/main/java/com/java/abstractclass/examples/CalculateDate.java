@@ -14,6 +14,17 @@ public class CalculateDate extends AbstractDateOne{
 		return 0;
 	}
 	
+	/**
+	 * below error will get when method modifier is changed to private
+	 * <p>
+	 * Exception in thread "main" java.lang.Error: Unresolved compilation problem: </br>
+	 * Cannot reduce the visibility of the inherited method from AbstractDateOne
+	 * </p>
+	 * 
+	 * @param date
+	 * @param days
+	 * @return date
+	 */
 	@Override
 	public Date addDays(Date date, int days) {
 //		return super.addDays(date, days);
