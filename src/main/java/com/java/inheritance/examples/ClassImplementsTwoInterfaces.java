@@ -1,5 +1,7 @@
 package com.java.inheritance.examples;
 
+import com.practice.java.inheritance.examples.InterfaceOne;
+
 public class ClassImplementsTwoInterfaces implements InterfaceOne, InterfaceTwo {
 
 	@Override
