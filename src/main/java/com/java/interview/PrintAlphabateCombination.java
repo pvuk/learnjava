@@ -1,4 +1,4 @@
-package com.practice.java.interview;
+package com.java.interview;
 
 /**
  * 
