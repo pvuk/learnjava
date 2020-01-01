@@ -19,7 +19,7 @@ public class PrintAlphabateCombination {
 		for (int i = 64; i < 90; i++) {
 			// char 87 = X, i increment upto 3 i.e 90 = Z
 			if (i < 88) {
-				i = printAlphabet(i, 1, sb);// using recursive method
+				i = recursivePrintAlphabet(i, 1, sb);// using recursive method
 				// char 88 = X, avoid comma append
 				if (i < 87) {
 					sb.append(", ");
@@ -29,11 +29,11 @@ public class PrintAlphabateCombination {
 		System.out.println(sb.toString());
 	}
 
-	private static int printAlphabet(int i, int combinationCount, StringBuilder sb) {
+	private static int recursivePrintAlphabet(int i, int combinationCount, StringBuilder sb) {
 		if (combinationCount > 3) {
 			return i;
 		}
 		sb.append((char) (i + combinationCount));
-		return printAlphabet(i, combinationCount + 1, sb);
+		return recursivePrintAlphabet(i, combinationCount + 1, sb);
 	}
 }
