@@ -10,7 +10,7 @@ package com.practice.java.interview.productbased.adp;
  * 
  * @author Priyanka
  *
- * @date Thu 07-Nov-2019 19:32
+ * @Date Thu 07-Nov-2019 19:32
  */
 public class WhenGarbageCollectorInvoked {
 
