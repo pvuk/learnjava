@@ -28,7 +28,7 @@ class Three extends Two
  * <p><a href="https://www.geeksforgeeks.org/inheritance-in-java/">Multilevel Inheritance : </a>In Multilevel Inheritance, a derived class will be inheriting a base class and as well as the derived class also act as the base class to other class. In below image, the class A serves as a base class for the derived class B, which in turn serves as a base class for the derived class C. In Java, a class cannot directly access the grandparent’s members.
  * @author P V UdayKiran
  *
- * @Date: Sat 07-Dec-2019 08:51
+ * @since Sat 07-Dec-2019 08:51
  * @version: %I%
  */
 // Drived class 

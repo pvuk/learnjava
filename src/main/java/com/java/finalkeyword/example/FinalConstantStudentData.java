@@ -16,7 +16,7 @@ package com.java.finalkeyword.example;
  * 
  * @author P V UdayKiran
  *
- * @Date: Fri 22-Nov-2019 20:26
+ * @since Fri 22-Nov-2019 20:26
  */
 public class FinalConstantStudentData {
 
