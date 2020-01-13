@@ -4,7 +4,7 @@ package com.java.interview.productbased.accenture;
  * 
  * @author P V UdayKiran
  *
- * @Date: Thu 14-Nov-2019 21:34
+ * @Date Thu 14-Nov-2019 21:34
  */
 public class DivisionOfNumbers {
 	public static void main(String[] args) {

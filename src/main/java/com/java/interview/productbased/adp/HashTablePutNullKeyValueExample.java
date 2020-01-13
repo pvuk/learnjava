@@ -20,7 +20,7 @@ import java.util.Hashtable;
  * 
  * @author Priyanka
  *
- * @Date: Thu 07-Nov-2019 19:42 Internation date format yyyy-MM-dd
+ * @Date Thu 07-Nov-2019 19:42 Internation date format yyyy-MM-dd
  */
 public class HashTablePutNullKeyValueExample {
 

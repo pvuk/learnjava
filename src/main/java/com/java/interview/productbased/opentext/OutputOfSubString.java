@@ -8,7 +8,7 @@ package com.java.interview.productbased.opentext;
  * </p>
  * @author P V UdayKiran
  *
- * @Date: Sun 01-Dec-2019 20:08
+ * @Date Sun 01-Dec-2019 20:08
  */
 public class OutputOfSubString {
 	public static void main(String[] args) {
