@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
  * update package from com.practice.java.hashmap.examples to com.java.hashmap.examples once task is done.
  * 
  * @author udaykiran pulipati
- * @date 04-Nov-2019 21:27
+ * @Date 04-Nov-2019 21:27
  */
 public class HashMapOverrideEqualsAndHashCodeMethods {
 
@@ -18,7 +18,7 @@ public class HashMapOverrideEqualsAndHashCodeMethods {
 	 * 
 	 * @param args
 	 * @author udaykiran pulipati
-	 * @date 04-Nov-2019 21:28
+	 * @Date 04-Nov-2019 21:28
 	 */
 	public static void main(String[] args) {
 		Map<String, HeadSetCompany> hashMap = new HashMap<>();

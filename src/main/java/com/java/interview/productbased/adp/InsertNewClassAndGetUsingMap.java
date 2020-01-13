@@ -8,7 +8,7 @@ import java.util.Map;
  * 
  * @author Priyanka
  *
- * @date Thu 07-Nov-2019 19:12
+ * @Date Thu 07-Nov-2019 19:12
  */
 public class InsertNewClassAndGetUsingMap {
 	public static void main(String[] args) {
