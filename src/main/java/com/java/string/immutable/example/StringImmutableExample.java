@@ -17,24 +17,25 @@ public class StringImmutableExample {
 	
 	public static void main(String[] args) {
 		String s1 = "abc";
-		log.info("abc value: {}, hashcode: {}", s1, s1.hashCode());
+		log.info("s1 value: {}, s1 hashcode: {}", s1, s1.hashCode());
 //		String s2 = "ABC";
 //		log.info("ABC value: {}, hashcode: {}", s2, s2.hashCode());
-		log.info("Trying to change abc value from {} to uppercase {} and hashcode {}", s1, s1.toUpperCase(), s1.hashCode());
-		log.info("After update abc value: {}, hashcode: {}", s1, s1.hashCode());
+		log.info("Trying to change s1 value from: {} to .toUpperCase(): {} without assigning to s1 and s1 hashcode {}", s1, s1.toUpperCase(), s1.hashCode());
 		
-		log.info("Trying to change abc value from {} to uppercase {} by assigning", s1, s1 = s1.toUpperCase());
-		log.info("After update abc value assigning: {}, hashcode: {}", s1, s1.hashCode());
+		log.info("Trying to change s1 value from: {} to .toUpperCase(): {} by assigning, s1 hashcode: {}", s1, s1 = s1.toUpperCase(), s1.hashCode());
+		System.out.println("===================================================================");
+		String firstName = "Mahendra Singh";
+		log.info("firstName: {}, firstName hashcode: {}", firstName, firstName.hashCode());
 		
-		String name = "Mahendra Singh ";
-		log.info("name: {}, hashcode: {}", name, name.hashCode());
-		name.concat("Dhoni");
-		log.info("concat name \"Dhoni\" name: {}, hashcode: {}", name, name.hashCode());
-		String firstName = name;
-		log.info("Assigning name: {} to firstName: {}, hashcode: {}", firstName, firstName.hashCode());
-		name = name.concat("Dhoni");
-		log.info("contact name with \"Dhoni\" and assigning to name: {}, hashcode: {}", name, name.hashCode());
-//		In such case, name points to the "Mahendra Singh Dhoni". Please notice that still "Mahendra Singh " object is not modified.
-		log.info("name: {}, hashcode: {}, firstName: {}, hashcode: {}", name, name.hashCode(), firstName, firstName.hashCode());
+		String lastName = " Dhoni";
+		firstName.concat(lastName);
+		log.info("concat firstName: {} with lastName: {} without assign to firstName, firstName hashcode: {}", firstName, lastName, firstName.hashCode());
+		log.warn("In above case, Please notice that still \"Mahendra Singh \" object is not modified.");
+		
+		log.info("concat firstName: {} with lastName: {} and assigning to firstName: {}, firstName hashcode: {}",
+				firstName, lastName, firstName = firstName.concat(lastName), firstName.hashCode());
+
+		log.info("firstName: {}, firstName hashcode: {}, lastName: {}, lastName hashcode: {}", firstName, firstName.hashCode(), lastName, lastName.hashCode());
+		System.out.println("===================================================================");
 	}
 }
