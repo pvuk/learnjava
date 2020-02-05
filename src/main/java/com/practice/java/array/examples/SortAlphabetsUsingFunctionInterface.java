@@ -1,6 +1,7 @@
 package com.practice.java.array.examples;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -71,5 +72,27 @@ public class SortAlphabetsUsingFunctionInterface {
 		sortAlphatets.sort(list, SortOrder.ASC);
 		System.out.println("ASC order: " + list);// FunctionInterface sort method calling
 
+		
+		String[] sArray = {"Cash Pay",
+				"Auto Pay",
+				"Debit Card Credit Pay",
+				"Credit Card Credit Pay",
+				"Re Pay",
+				"Feature Pay",
+				"Reward Points Pay",
+				"Over Pay",
+				"Late Pay",
+				"Minimum Pay",
+				"Maximum Pay"};
+		String[] duplicateSArray = Arrays.stream(sArray).toArray(String[]::new);//duplicating String[] with new String[] using Java8
+		
+		Collections.sort(Arrays.asList(duplicateSArray));// here sorting sArray without return. Check the reason why it is sorting!!
+		System.out.println("Convert String array to list and sort using Collections.sort, convert string array to string using Arrays.toString: \n"+ Arrays.toString(duplicateSArray));
+		System.out.print("\nIterate String array using Java8: ");
+		Arrays.stream(duplicateSArray).sorted().forEach(System.out::println);
+		
+		Arrays.sort(duplicateSArray);//Sorting String[]
+		String[] sortDuplicateSArray = Arrays.stream(duplicateSArray).toArray(String[]::new);
+		System.out.println(Arrays.toString(sortDuplicateSArray));
 	}
 }
