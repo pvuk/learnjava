@@ -114,6 +114,7 @@ public class ConvertDateToString {
 		log.info("Date: {}", ZonedDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH_mm_ss_SSS")));
 		log.info("Date: {}", ZonedDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH_mm_ss_SSSSS")));
 		log.info("Date: {}", ZonedDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH_mm_ss_SSSSSSSS")));
+		log.info("Date: upto MicroSecond(1 Million) {}", ZonedDateTime.now().format(DateTimeFormatter.ofPattern("ddMMYYYYHHmmssSSSSSSS")));
 		
 		LocalDateTime oldDate = LocalDateTime.of(1989, Month.SEPTEMBER, 24, 10, 00);
 		LocalDateTime newDate = LocalDateTime.of(2020, Month.FEBRUARY, 25, 12, 02);
