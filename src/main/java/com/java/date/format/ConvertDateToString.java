@@ -1,5 +1,6 @@
 package com.java.date.format;
 
+import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.Month;
 import java.time.ZonedDateTime;
@@ -136,5 +137,7 @@ public class ConvertDateToString {
 		log.info("{} milliseconds", milliseconds);
 		log.info("{} microseconds", microseconds);
 		log.info("{} nanoseconds", nanoseconds);
+		
+		log.info("{} Instant date", Instant.now());
 	}
 }
