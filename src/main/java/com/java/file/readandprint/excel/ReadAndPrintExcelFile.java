@@ -6,22 +6,32 @@ import java.util.Iterator;
 import java.util.Map;
 
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
+import org.springframework.util.StringUtils;
 
 import com.monitorjbl.xlsx.StreamingReader;
+
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * 
  * @author udaykiran p
+ * @version 2.0
  *
  */
+@Slf4j
 public class ReadAndPrintExcelFile {
 	
 	public static void main(String[] args) {
 		try {
 			String projectPtah = System.getProperty("user.dir");
+			/**
+			 * Users.xlsx
+			 * CC Monthly Bills_v-08032020-0928.xlsx
+			 */
 			FileInputStream inputStream = new FileInputStream(projectPtah +"/src/main/resources/upload_files/Users.xlsx");// Read Excel file from this location
 			if (inputStream != null) {
 				Workbook wb = StreamingReader.builder().rowCacheSize(100) // number of rows to keep in memory (default to 10)
@@ -36,36 +46,58 @@ public class ReadAndPrintExcelFile {
 					Row row = iterator.next();
 					rowCount = row.getRowNum();
 					rowCount++;
-					int columnNum = 0;
-					String key = null, value = null;
-					for(Iterator<Cell> cellIterator = row.cellIterator(); cellIterator.hasNext();) {
-						Cell cell = cellIterator.next();
-						columnNum = cell.getColumnIndex();
-						String cellData = getCellValueAsString(cell);
-						System.out.println("RowNumber: "+ rowCount +", CellData: "+ cellData +", CellNumber: "+ columnNum);
-						//Reading data from Excel upto 6 rows only
-//						if (rowCount == 6) {
-							//rowCount == 1 Headers Section(User ID, User Name)  is not reading
-							if (rowCount > 1) {
-								if (columnNum == 0) {
-									key = cellData;//User ID
+					
+					//identify empty row
+					if(!isRowEmpty(row)) {
+						int columnNum = 0;
+						String key = null, value = null;
+						for(Iterator<Cell> cellIterator = row.cellIterator(); cellIterator.hasNext();) {
+							Cell cell = cellIterator.next();
+							columnNum = cell.getColumnIndex();
+							String cellData = getCellValueAsString(cell);
+							System.out.println("RowNumber: "+ rowCount +", CellData: "+ cellData +", CellNumber: "+ columnNum);
+							//Reading data from Excel upto 6 rows only
+//							if (rowCount == 6) {
+								//rowCount == 1 Headers Section(User ID, User Name)  is not reading
+								if (rowCount > 1) {
+									if (columnNum == 0) {
+										key = cellData;//User ID
+									}
+									if (columnNum == 1) {
+										value = cellData;//User Name
+									}
 								}
-								if (columnNum == 1) {
-									value = cellData;//User Name
-								}
-							}
-//						}
-					}
-					if (key != null && value != null) {
-						map.put(key, value);
+//							}
+						}
+						
+						if (key != null && value != null) {
+							map.put(key, value);
+						}
+//						String userID = "1";
+//						System.out.println("User ID: "+ userID +", User Name: "+ map.get("1"));
+					} else {
+//						log.info("Empty Row Number: {}", rowCount);
 					}
 				}
-				String userID = "1";
-				System.out.println("User ID: "+ userID +", User Name: "+ map.get("1"));
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	private static boolean isRowEmpty(Row row) {
+//		for (int c = row.getFirstCellNum(); c < row.getLastCellNum(); c++) {
+//	        Cell cell = row.getCell(c);
+//	        if (cell != null && cell.getCellType() != CellType.BLANK)
+//	            return false;
+//	    }
+		for(int cellNum = row.getFirstCellNum(); cellNum < row.getLastCellNum(); cellNum++){
+            Cell cell = row.getCell(cellNum);
+            if(cell != null && cell.getCellType() != CellType.BLANK && !StringUtils.isEmpty(cell.toString())){
+            return false;
+            }    
+         }
+	    return true;
 	}
 
 	private static String getCellValueAsString(Cell cell) {
