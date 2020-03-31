@@ -45,10 +45,11 @@ public class SplitStringByCommaConvertStringArrayToLongArray {
 		
 		List<Long> idList = Arrays.asList(longArray);
 		List<List<Long>> partitionLongIds = partitionLongIds(idList);//convert list to sublist
+		System.out.println(partitionLongIds);
 		
-		queryBuild(partitionLongIds);
+//		queryBuild(partitionLongIds);
 		
-		log.info("Time: {}", System.currentTimeMillis() - start);
+		log.info("Time: {}ms", System.currentTimeMillis() - start);
 	}
 	
 	private static void queryBuild(List<List<Long>> partitionLongIds) {
