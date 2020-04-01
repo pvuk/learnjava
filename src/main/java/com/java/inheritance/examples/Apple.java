@@ -3,7 +3,7 @@ package com.java.inheritance.examples;
  * <p><b>Apple: </b>sub class</p>
  * @author P V UdayKiran
  *
- * @Date: Fri 06-Dec-2019 12:11
+ * @Date Fri 06-Dec-2019 12:11
  * @version: %I%
  */
 class Apple extends Fruit {
