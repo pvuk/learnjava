@@ -1,4 +1,4 @@
-package com.java.interview.servicebased.deloitte.facetoface;
+package com.java.interview.servicebased.facetoface.deloitte;
 
 import java.util.Arrays;
 
