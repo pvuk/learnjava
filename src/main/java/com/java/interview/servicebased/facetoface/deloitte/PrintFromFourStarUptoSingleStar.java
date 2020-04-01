@@ -1,4 +1,4 @@
-package com.java.interview.servicebased.deloitte.facetoface;
+package com.java.interview.servicebased.facetoface.deloitte;
 
 /**
  * 
@@ -27,7 +27,7 @@ public class PrintFromFourStarUptoSingleStar {
 	/**
 	 * @author P V UdayKiran
 	 *
-	 * @Date Thu 05-Dec-2019 20:42
+	 * @Date: Thu 05-Dec-2019 20:42
 	 * @param n
 	 */
 	private static void usingForLoopWithInnserForLoopInDecreasingNumber(int n) {

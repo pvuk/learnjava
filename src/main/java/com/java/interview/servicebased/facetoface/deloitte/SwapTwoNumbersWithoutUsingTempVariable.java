@@ -1,4 +1,4 @@
-package com.java.interview.servicebased.deloitte.facetoface;
+package com.java.interview.servicebased.facetoface.deloitte;
 
 import java.util.Arrays;
 
@@ -7,7 +7,7 @@ import java.util.Arrays;
  * 
  * @author P V UdayKiran
  *
- * @Date Sun 08-Dec-2019 11:34
+ * @Date: Sun 08-Dec-2019 11:34
  * @version: %I%
  */
 public class SwapTwoNumbersWithoutUsingTempVariable {
