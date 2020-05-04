@@ -79,9 +79,20 @@ public class StringImmutableExample {
 				x, x.hashCode(), y, y.hashCode(), z, z.hashCode(), A, A.hashCode(), B, B.hashCode(), p, p.hashCode(), q, q.hashCode(), r, r.hashCode());
 		log.info("[true / false condition] x equals y: {}, y equals z: {}, x equals A: {}, A equals B: {}, x equals p: {}, q equals r: {}",
 				x.equals(y), y.equals(z), x.equals(A), A.equals(B), x.equals(p), q.equals(r));
+		if(y == z) {
+			log.info("Y e Z");
+		}
 		log.info("[true / false condition] x == y: {}, y == z: {}, x == A: {}, A == B: {}, x == p: {}, q == r: {}",
 				x == y, y == z, x == A, A == B, x == p, q == r);
 		
 		System.out.println("===================================================================");
+		
+		String[] immutableArray1 = {"youtube", "twitter", "github", "linkedin"};
+		log.info("Immutable String Array data: {} {} {} {}", immutableArray1);
+		log.info("Immutable String Array hascode: {}", immutableArray1.hashCode());
+		log.info("Replacing index 0 with {}", "medium");
+		immutableArray1[0] = "medium";
+		log.info("Immutable String Array data after update: {} {} {} {}", immutableArray1);
+		log.info("Immutable String Array hascode: {}", immutableArray1.hashCode());
 	}
 }
