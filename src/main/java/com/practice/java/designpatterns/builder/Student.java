@@ -1,6 +1,4 @@
-package com.java.designpatterns.builder;
-
-import lombok.Data;
+package com.practice.java.designpatterns.builder;
 
 /**
  * 
@@ -106,7 +104,6 @@ import lombok.Data;
  * 
  *         
  */
-@Data
 public class Student {
 	
 	private final String firstName;//required
@@ -115,12 +112,39 @@ public class Student {
 	private final String phone;//optional
 	private final String address;//optional
 	
+	//All getter, and NO setter to provide immutability
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+		
 	private Student(StudentBuilder builder) {
 		this.firstName = builder.firstName;
 		this.lastName = builder.lastName;
 		this.age = builder.age;
 		this.phone = builder.phone;
 		this.address = builder.address;
+	}
+	
+	@Override
+	public String toString() {
+		return "Student [firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + ", phone=" + phone
+				+ ", address=" + address + "]";
 	}
 	
 	//Builder class
@@ -154,6 +178,7 @@ public class Student {
 			return this;
 		}
 		
+		//Return the finally constructed Student object
 		public Student build() throws Exception {
 			validateStudent();
 			return new Student(this);
