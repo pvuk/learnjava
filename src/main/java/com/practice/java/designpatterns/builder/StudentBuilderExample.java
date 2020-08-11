@@ -1,4 +1,4 @@
-package com.java.designpatterns.builder;
+package com.practice.java.designpatterns.builder;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -16,5 +16,16 @@ public class StudentBuilderExample {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public int method1(int a)
+	{
+		System.out.println("Integer: "+a);
+		return a;
+	}
+	public double method1(double a)
+	{
+		System.out.println("Double "+a);
+		return a;
 	}
 }
