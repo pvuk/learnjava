@@ -4,7 +4,7 @@ package com.practice.java.interview;
  * 
  * @author P V UdayKiran
  *
- * @Date Sat 01-Feb-2020 12:53
+ * @version 1, changes on Sat 01-Feb-2020 12:53
  *
  */
 public class Print3XArray {

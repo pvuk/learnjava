@@ -7,7 +7,7 @@ import java.util.Scanner;
  * 
  * @author P V UdayKiran
  *
- * @Date Fri 15-Nov-2019 21:30
+ * @version 1, changes on Fri 15-Nov-2019 21:30
  */
 public class PrintValuesBasedOnArrayValueCondition {
 	public static void main(String[] args) {

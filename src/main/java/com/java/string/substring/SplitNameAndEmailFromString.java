@@ -4,7 +4,7 @@ package com.java.string.substring;
  * Split Name and Email from String.
  * 
  * @author venkataudaykiranp
- * @Date Tue 03-Mar-2020 16:32
+ * @version 1, changes on Tue 03-Mar-2020 16:32
  * @version 1.0
  */
 public class SplitNameAndEmailFromString {

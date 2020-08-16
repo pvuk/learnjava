@@ -6,7 +6,7 @@ import java.util.function.BiConsumer;
  * <p>What is the output of below statements ?</p>
  * @author P V UdayKiran
  *
- * @Date Sun 12-Apr-2020 15:34
+ * @version 1, changes on Sun 12-Apr-2020 15:34
  *
  */
 public class AdditionUsingLambda {

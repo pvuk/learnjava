@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
  * 
  * @author P V UdayKiran
  *
- * @Date Sun 29-Mar-2020 12:14
+ * @version 1 changes on Sun 29-Mar-2020 12:14
  *
  */
 public class SumOfIntgersUsingLambda {

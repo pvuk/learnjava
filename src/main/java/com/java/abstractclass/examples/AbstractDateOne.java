@@ -9,7 +9,7 @@ import java.util.Date;
  * </p>
  * @author P V UdayKiran
  *
- * @Date Sat 07-Dec-2019 07:09
+ * @version 1, changes on Sat 07-Dec-2019 07:09
  * @version: %I%
  */
 public abstract class AbstractDateOne {
