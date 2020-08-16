@@ -16,6 +16,6 @@ public class SumOfIntgersUsingLambda {
 		int a = 458, b = 765;
 		System.out.println(IntStream.of(a, b).sum());
 
-		System.out.println(Arrays.asList(a, b).stream().collect(Collectors.summingInt(Integer::valueOf)));
+		System.out.println("Sum of Two integers: "+ Arrays.asList(a, b).stream().collect(Collectors.summingInt(Integer::valueOf)));
 	}
 }
