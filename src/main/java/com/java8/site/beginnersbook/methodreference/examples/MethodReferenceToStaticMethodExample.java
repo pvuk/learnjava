@@ -12,7 +12,7 @@ class Multiplication{
  * 
  * @author P V UdayKiran
  *
- * @Date Thu 07-May-2020 14:48
+ * @version 1, changes on Thu 07-May-2020 14:48
  *
  */
 public class MethodReferenceToStaticMethodExample {  

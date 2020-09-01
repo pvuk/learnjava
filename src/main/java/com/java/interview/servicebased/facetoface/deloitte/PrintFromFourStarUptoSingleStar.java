@@ -27,7 +27,7 @@ public class PrintFromFourStarUptoSingleStar {
 	/**
 	 * @author P V UdayKiran
 	 *
-	 * @Date: Thu 05-Dec-2019 20:42
+	 * @version 1, changes on: Thu 05-Dec-2019 20:42
 	 * @param n
 	 */
 	private static void usingForLoopWithInnserForLoopInDecreasingNumber(int n) {

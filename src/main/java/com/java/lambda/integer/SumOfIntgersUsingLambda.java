@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
  * 
  * @author P V UdayKiran
  *
- * @Date Sun 29-Mar-2020 12:14
+ * @version 1 changes on Sun 29-Mar-2020 12:14
  *
  */
 public class SumOfIntgersUsingLambda {
@@ -16,6 +16,6 @@ public class SumOfIntgersUsingLambda {
 		int a = 458, b = 765;
 		System.out.println(IntStream.of(a, b).sum());
 
-		System.out.println(Arrays.asList(a, b).stream().collect(Collectors.summingInt(Integer::valueOf)));
+		System.out.println("Sum of Two integers: "+ Arrays.asList(a, b).stream().collect(Collectors.summingInt(Integer::valueOf)));
 	}
 }

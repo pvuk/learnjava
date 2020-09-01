@@ -8,7 +8,7 @@ import java.util.stream.DoubleStream;
 /**
  * 
  * @author venkataudaykiranp
- * @Date Thu 12-Dec-2019 14:35
+ * @version 1, changes on Thu 12-Dec-2019 14:35
  */
 public class CreateRandomNumber {
 	

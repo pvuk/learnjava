@@ -27,7 +27,7 @@ class ThrowExample {
  * update package from com.practice.java.collection.difference.examples to com.java.collection.difference.examples once task is done.
  * 
  * @author udaykiran pulipati
- * @Date 04-Nov-2019 21:52
+ * @version 1, changes on 04-Nov-2019 21:52
  */
 public class Example1{ 
   public static void main(String args[]){ 

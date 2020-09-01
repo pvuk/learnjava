@@ -6,7 +6,7 @@ import java.util.Scanner;
  * 
  * @author P V UdayKiran
  *
- * @Date Mon 18-Nov-2019 18:58
+ * @version 1, changes on Mon 18-Nov-2019 18:58
  */
 public class FactorialNumber {
 

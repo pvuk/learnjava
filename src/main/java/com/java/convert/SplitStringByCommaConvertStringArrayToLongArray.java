@@ -15,7 +15,7 @@ import lombok.extern.slf4j.Slf4j;
  * 	</ol>
  * </p>
  * @author venkataudaykiranp
- * @Date Mon 09-Dec-2019 12:30
+ * @version 1, changes on Mon 09-Dec-2019 12:30
  */
 @Slf4j
 public class SplitStringByCommaConvertStringArrayToLongArray {

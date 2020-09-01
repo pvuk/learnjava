@@ -4,7 +4,7 @@ package com.java.interview;
  * <a href="https://www.geeksforgeeks.org/java-program-to-check-whether-a-string-is-a-palindrome/">Java implementation of the approach</a>
  * 
  * @author venkataudaykiranp
- * @Date Fri 24-Jan-2020 11:28
+ * @version 1, changes on Fri 24-Jan-2020 11:28
  */
 public class CheckStringPalindrome {
 

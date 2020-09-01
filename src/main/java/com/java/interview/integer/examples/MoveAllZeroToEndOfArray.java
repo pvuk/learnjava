@@ -12,7 +12,7 @@ import java.util.Arrays;
  * </p>
  * 
  * @author venkataudaykiranp
- * @Date Tue 10-Dec-2019 13:22
+ * @version 1, changes on Tue 10-Dec-2019 13:22
  */
 public class MoveAllZeroToEndOfArray {
 	public static void main(String[] args) {
