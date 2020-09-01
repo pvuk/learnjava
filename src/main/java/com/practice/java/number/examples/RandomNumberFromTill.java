@@ -6,7 +6,7 @@ import java.util.Scanner;
  * 
  * @author P V UdayKiran
  *
- * @Date: Sat 14-Dec-2019 19:15
+ * @version 1, changes on: Sat 14-Dec-2019 19:15
  * @version: %I%
  */
 public class RandomNumberFromTill {

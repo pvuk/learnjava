@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 /**
  * 
  * @author venkataudaykiranp
- * @Date Wed 18-Dec-2019 13:59
+ * @version 1, changes on Wed 18-Dec-2019 13:59
  */
 public class ReverseIntNumberUsingJava8 {
 	public static void main(String[] args) {

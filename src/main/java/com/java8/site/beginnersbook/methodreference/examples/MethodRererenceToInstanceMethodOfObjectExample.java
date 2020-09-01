@@ -5,7 +5,7 @@ package com.java8.site.beginnersbook.methodreference.examples;
  * 
  * @author P V UdayKiran
  *
- * @Date Thu 07-May-2020 14:43
+ * @version 1, changes on Thu 07-May-2020 14:43
  *
  */
 public class MethodRererenceToInstanceMethodOfObjectExample {  

@@ -15,7 +15,7 @@ import lombok.ToString;
  * update package from com.practice.java.hashmap.examples to com.java.hashmap.examples once task is done.
  * 
  * @author udaykiran pulipati
- * @Date 04-Nov-2019 21:28
+ * @version 1, changes on 04-Nov-2019 21:28
  */
 public class HeadSetCompany {
 	

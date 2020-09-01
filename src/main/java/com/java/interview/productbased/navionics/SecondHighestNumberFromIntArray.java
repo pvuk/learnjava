@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 /**
  * 
  * @author venkataudaykiranp
- * @Date Tue 03-Dec-2019 08:57
+ * @version 1, changes on Tue 03-Dec-2019 08:57
  */
 public class SecondHighestNumberFromIntArray {
 	public static void main(String[] args) {

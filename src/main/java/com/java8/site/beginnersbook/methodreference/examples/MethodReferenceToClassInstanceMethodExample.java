@@ -5,7 +5,7 @@ import java.util.Arrays;
  * 
  * @author P V UdayKiran
  *
- * @Date Thu 07-May-2020 14:53
+ * @version 1, changes on Thu 07-May-2020 14:53
  *
  */
 public class MethodReferenceToClassInstanceMethodExample {  

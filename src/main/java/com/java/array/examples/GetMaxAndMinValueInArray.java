@@ -9,7 +9,7 @@ import java.util.List;
  * com.java.array.examples once task is done.
  * 
  * @author udaykiran pulipati
- * @Date 04-Nov-2019 21:50
+ * @version 1, changes on 04-Nov-2019 21:50
  */
 public class GetMaxAndMinValueInArray {
 

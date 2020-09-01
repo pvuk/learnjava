@@ -8,7 +8,7 @@ package com.java.inheritance.examples;
  * 
  * @author P V UdayKiran
  *
- * @Date Fri 06-Dec-2019 11:23
+ * @version 1, changes on Fri 06-Dec-2019 11:23
  * @version: %I%
  */
 class Fruit {
