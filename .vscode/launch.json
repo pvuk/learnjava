@@ -1,0 +1,2037 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch RunObserverPattern",
+            "request": "launch",
+            "mainClass": "com.java.designpatterns.observer.RunObserverPattern",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch CalculateDate",
+            "request": "launch",
+            "mainClass": "com.java.abstractclass.examples.CalculateDate",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestPrivateConstructorExample",
+            "request": "launch",
+            "mainClass": "com.java.accessmodifier.examples.TestPrivateConstructorExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Addition",
+            "request": "launch",
+            "mainClass": "com.java.addition.examples.Addition",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch PostfixAndPrefixIncrement",
+            "request": "launch",
+            "mainClass": "com.java.addition.postfixprefix.PostfixAndPrefixIncrement",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch GetMaxAndMinValueInArray",
+            "request": "launch",
+            "mainClass": "com.java.array.examples.GetMaxAndMinValueInArray",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashMapFrequencies",
+            "request": "launch",
+            "mainClass": "com.java.collection.examples.HashMapFrequencies",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestHashMap",
+            "request": "launch",
+            "mainClass": "com.java.collection.examples.TestHashMap",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestLinkedHashMap",
+            "request": "launch",
+            "mainClass": "com.java.collection.examples.TestLinkedHashMap",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestTreeMap",
+            "request": "launch",
+            "mainClass": "com.java.collection.examples.TestTreeMap",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch TreeMapFrequencies",
+            "request": "launch",
+            "mainClass": "com.java.collection.examples.TreeMapFrequencies",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch GroupByListUsingJava8",
+            "request": "launch",
+            "mainClass": "com.java.collections.convert.examples.GroupByListUsingJava8",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ListStringToMap",
+            "request": "launch",
+            "mainClass": "com.java.collections.convert.examples.ListStringToMap",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArmstrongNumber",
+            "request": "launch",
+            "mainClass": "com.java.compare.array.ArmstrongNumber",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch CommonNumbersInArray",
+            "request": "launch",
+            "mainClass": "com.java.compare.array.CommonNumbersInArray",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch FibonacciSeries",
+            "request": "launch",
+            "mainClass": "com.java.compare.array.FibonacciSeries",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch CompareArrayStringInstant",
+            "request": "launch",
+            "mainClass": "com.java.compare.string.CompareArrayStringInstant",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch CompareTwoStrings",
+            "request": "launch",
+            "mainClass": "com.java.compare.string.CompareTwoStrings",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch BooleanConditionWithoutIfClause",
+            "request": "launch",
+            "mainClass": "com.java.condition.booleankeyword.expressiveway.BooleanConditionWithoutIfClause",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SplitStringByCommaConvertStringArrayToLongArray",
+            "request": "launch",
+            "mainClass": "com.java.convert.SplitStringByCommaConvertStringArrayToLongArray",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConvertIntToIntArray",
+            "request": "launch",
+            "mainClass": "com.java.convert.array.ConvertIntToIntArray",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConvertDoubleToBigDecimal",
+            "request": "launch",
+            "mainClass": "com.java.convert.doubleto.bigdecimal.ConvertDoubleToBigDecimal",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongToString",
+            "request": "launch",
+            "mainClass": "com.java.convert.longto.string.LongToString",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReadWordDocumentAndFormatData",
+            "request": "launch",
+            "mainClass": "com.java.convert.word.ReadWordDocumentAndFormatData",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch BubbleSort",
+            "request": "launch",
+            "mainClass": "com.java.datastructures.bubblesort.BubbleSort",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch DataTypesExamples",
+            "request": "launch",
+            "mainClass": "com.java.datatypes.examples.DataTypesExamples",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConvertDateToString",
+            "request": "launch",
+            "mainClass": "com.java.date.format.ConvertDateToString",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintFullDateAndTime",
+            "request": "launch",
+            "mainClass": "com.java.date.format.PrintFullDateAndTime",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SetTimeZero",
+            "request": "launch",
+            "mainClass": "com.java.date.format.SetTimeZero",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch StrategyPattern",
+            "request": "launch",
+            "mainClass": "com.java.designpatterns.strategy.StrategyPattern",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch EnumExample",
+            "request": "launch",
+            "mainClass": "com.java.enumexample.EnumExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch CharSequence",
+            "request": "launch",
+            "mainClass": "com.java.escapesequence.CharSequence",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch EscapseSequence",
+            "request": "launch",
+            "mainClass": "com.java.escapesequence.EscapseSequence",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch AvoidConcurrentModificationException",
+            "request": "launch",
+            "mainClass": "com.java.exception.collections.examples.AvoidConcurrentModificationException",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConcurrentModificationExceptionExample",
+            "request": "launch",
+            "mainClass": "com.java.exception.collections.examples.ConcurrentModificationExceptionExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConcurrentModificationExceptionWithArrayListSubList",
+            "request": "launch",
+            "mainClass": "com.java.exception.collections.examples.ConcurrentModificationExceptionWithArrayListSubList",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch CustomArithmeticException",
+            "request": "launch",
+            "mainClass": "com.java.exception.throwkeyword.CustomArithmeticException",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch UserDefinedNullPointerExceptionExample",
+            "request": "launch",
+            "mainClass": "com.java.exception.throwkeyword.UserDefinedNullPointerExceptionExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch CustomExceptionUsingThrows",
+            "request": "launch",
+            "mainClass": "com.java.exception.throwskeyword.CustomExceptionUsingThrows",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReadAndPrintExcelFile",
+            "request": "launch",
+            "mainClass": "com.java.file.readandprint.excel.ReadAndPrintExcelFile",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReadAndPrintPDF",
+            "request": "launch",
+            "mainClass": "com.java.file.readandprint.pdf.ReadAndPrintPDF",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReadURLAndPrintPDF",
+            "request": "launch",
+            "mainClass": "com.java.file.readandprint.pdf.ReadURLAndPrintPDF",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReadFileAndReplaceOldTextwithNewTextOnCondition",
+            "request": "launch",
+            "mainClass": "com.java.file.readandwrite.ReadFileAndReplaceOldTextwithNewTextOnCondition",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReadFileAndReplaceOldTextwithNewTextOnConditionTestSample",
+            "request": "launch",
+            "mainClass": "com.java.file.readandwrite.sample.ReadFileAndReplaceOldTextwithNewTextOnConditionTestSample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReadJsonFileNamesAndFindClassNames",
+            "request": "launch",
+            "mainClass": "com.java.file.readfiles.ReadJsonFileNamesAndFindClassNames",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch FinalConstantStudentData",
+            "request": "launch",
+            "mainClass": "com.java.finalkeyword.example.FinalConstantStudentData",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch FinalVariableCannotReAssign",
+            "request": "launch",
+            "mainClass": "com.java.finalkeyword.example.FinalVariableCannotReAssign",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch LocalFinalVariable",
+            "request": "launch",
+            "mainClass": "com.java.finalkeyword.example.LocalFinalVariable",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReferenceFinalVariable",
+            "request": "launch",
+            "mainClass": "com.java.finalkeyword.example.ReferenceFinalVariable",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch GenericFunctionExample",
+            "request": "launch",
+            "mainClass": "com.java.formula.generics.examples.GenericFunctionExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch GenericsExample",
+            "request": "launch",
+            "mainClass": "com.java.formula.generics.examples.GenericsExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "com.java.formula.generics.examples.Main",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch AppleTest",
+            "request": "launch",
+            "mainClass": "com.java.inheritance.examples.AppleTest",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClassImplementsTwoInterfaces",
+            "request": "launch",
+            "mainClass": "com.java.inheritance.examples.ClassImplementsTwoInterfaces",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch RelationsDemo",
+            "request": "launch",
+            "mainClass": "com.java.inheritance.examples.RelationsDemo",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "com.java.inheritance.examples.Test",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Birds",
+            "request": "launch",
+            "mainClass": "com.java.inheritance.interfaces.examples.Birds",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch DefaultMethodsExampleUsingJava8LambdaExpression",
+            "request": "launch",
+            "mainClass": "com.java.interfaces.java8.examples.DefaultMethodsExampleUsingJava8LambdaExpression",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch AdditionUsingLambda",
+            "request": "launch",
+            "mainClass": "com.java.interview.AdditionUsingLambda",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch CheckStringPalindrome",
+            "request": "launch",
+            "mainClass": "com.java.interview.CheckStringPalindrome",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintAlphabateCombination",
+            "request": "launch",
+            "mainClass": "com.java.interview.PrintAlphabateCombination",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConvertMapStringToMapIntegerUsingStreams",
+            "request": "launch",
+            "mainClass": "com.java.interview.cognizent.ConvertMapStringToMapIntegerUsingStreams",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SnakeNumeralPointsGrowing",
+            "request": "launch",
+            "mainClass": "com.java.interview.everbridge.SnakeNumeralPointsGrowing",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayPositionChange",
+            "request": "launch",
+            "mainClass": "com.java.interview.glassdoor.dbs.ArrayPositionChange",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch BolleanLocalVariable",
+            "request": "launch",
+            "mainClass": "com.java.interview.glassdoor.dbs.BolleanLocalVariable",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch FinallyWithSExitDemo",
+            "request": "launch",
+            "mainClass": "com.java.interview.glassdoor.dbs.FinallyWithSExitDemo",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch MoveAllZeroToEndOfArray",
+            "request": "launch",
+            "mainClass": "com.java.interview.integer.examples.MoveAllZeroToEndOfArray",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseIntNumberWithoutUsingJavaPredefinedMethods",
+            "request": "launch",
+            "mainClass": "com.java.interview.integer.examples.ReverseIntNumberWithoutUsingJavaPredefinedMethods",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseIntNumberUsingJava8",
+            "request": "launch",
+            "mainClass": "com.java.interview.java8.integer.examples.ReverseIntNumberUsingJava8",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch AccessNonStaticMethodFromStaticMethod",
+            "request": "launch",
+            "mainClass": "com.java.interview.linkedin.assessment.AccessNonStaticMethodFromStaticMethod",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch FloatDeclaration",
+            "request": "launch",
+            "mainClass": "com.java.interview.linkedin.assessment.FloatDeclaration",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch HowManyTimesForLoopExecute",
+            "request": "launch",
+            "mainClass": "com.java.interview.linkedin.assessment.HowManyTimesForLoopExecute",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch IntArraySize",
+            "request": "launch",
+            "mainClass": "com.java.interview.linkedin.assessment.IntArraySize",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ListInstanceOf",
+            "request": "launch",
+            "mainClass": "com.java.interview.linkedin.assessment.ListInstanceOf",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch MainClass",
+            "request": "launch",
+            "mainClass": "com.java.interview.linkedin.assessment.MainClass",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintTryFinally",
+            "request": "launch",
+            "mainClass": "com.java.interview.linkedin.assessment.PrintTryFinally",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringConcat",
+            "request": "launch",
+            "mainClass": "com.java.interview.linkedin.assessment.StringConcat",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SubString",
+            "request": "launch",
+            "mainClass": "com.java.interview.linkedin.assessment.SubString",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SubStringOutOfRange",
+            "request": "launch",
+            "mainClass": "com.java.interview.linkedin.assessment.SubStringOutOfRange",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch DivisionOfNumbers",
+            "request": "launch",
+            "mainClass": "com.java.interview.productbased.accenture.DivisionOfNumbers",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Add1ToNNumbersAndPringUsingRecursionExample",
+            "request": "launch",
+            "mainClass": "com.java.interview.productbased.adp.Add1ToNNumbersAndPringUsingRecursionExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch DefaultValue",
+            "request": "launch",
+            "mainClass": "com.java.interview.productbased.adp.DefaultValue",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashTablePutNullKeyValueExample",
+            "request": "launch",
+            "mainClass": "com.java.interview.productbased.adp.HashTablePutNullKeyValueExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch InheritanceCount",
+            "request": "launch",
+            "mainClass": "com.java.interview.productbased.adp.InheritanceCount",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch InsertNewClassAndGetUsingMap",
+            "request": "launch",
+            "mainClass": "com.java.interview.productbased.adp.InsertNewClassAndGetUsingMap",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch InterviewPassingNullParameter",
+            "request": "launch",
+            "mainClass": "com.java.interview.productbased.adp.InterviewPassingNullParameter",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch InterviewWhatIsTheOutput",
+            "request": "launch",
+            "mainClass": "com.java.interview.productbased.adp.InterviewWhatIsTheOutput",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SeriesOfNumbers",
+            "request": "launch",
+            "mainClass": "com.java.interview.productbased.adp.SeriesOfNumbers",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExceptionCatchExample",
+            "request": "launch",
+            "mainClass": "com.java.interview.productbased.ibm.ExceptionCatchExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch TreeSetExample",
+            "request": "launch",
+            "mainClass": "com.java.interview.productbased.ibm.TreeSetExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SecondHighestNumberFromIntArray",
+            "request": "launch",
+            "mainClass": "com.java.interview.productbased.navionics.SecondHighestNumberFromIntArray",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch HowHashMapPrintTheData",
+            "request": "launch",
+            "mainClass": "com.java.interview.productbased.opentext.HowHashMapPrintTheData",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch OutputOfSubString",
+            "request": "launch",
+            "mainClass": "com.java.interview.productbased.opentext.OutputOfSubString",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintFromFourStarUptoSingleStar",
+            "request": "launch",
+            "mainClass": "com.java.interview.servicebased.facetoface.deloitte.PrintFromFourStarUptoSingleStar",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SwapTwoNumbersWithoutUsingTempVariable",
+            "request": "launch",
+            "mainClass": "com.java.interview.servicebased.facetoface.deloitte.SwapTwoNumbersWithoutUsingTempVariable",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConvertListToMapUsingLambda",
+            "request": "launch",
+            "mainClass": "com.java.interview.servicebased.facetoface.infosys.ConvertListToMapUsingLambda",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch FinalWithFor_EachStatement",
+            "request": "launch",
+            "mainClass": "com.java.interview.servicebased.hcl.FinalWithFor_EachStatement",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Abstract1",
+            "request": "launch",
+            "mainClass": "com.java.interview.site.javaee.Abstract1",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch HowManyTimesLoopExecute",
+            "request": "launch",
+            "mainClass": "com.java.interview.techgig.HowManyTimesLoopExecute",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConvertJsonListArrayIntegerToStringCommaSeparated",
+            "request": "launch",
+            "mainClass": "com.java.json.convert.ConvertJsonListArrayIntegerToStringCommaSeparated",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConvertListStringToIntegerUsingLambda",
+            "request": "launch",
+            "mainClass": "com.java.lambda.convert.ConvertListStringToIntegerUsingLambda",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ForEachAndLambaForEach",
+            "request": "launch",
+            "mainClass": "com.java.lambda.foreach.ForEachAndLambaForEach",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ListToMapUsingLambda",
+            "request": "launch",
+            "mainClass": "com.java.lambda.foreach.ListToMapUsingLambda",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumOfIntgersUsingLambda",
+            "request": "launch",
+            "mainClass": "com.java.lambda.integer.SumOfIntgersUsingLambda",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumOfListIntegerEqualToKey",
+            "request": "launch",
+            "mainClass": "com.java.lambda.map.SumOfListIntegerEqualToKey",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SortListGroupOrderByName",
+            "request": "launch",
+            "mainClass": "com.java.lambda.sort.SortListGroupOrderByName",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongLength",
+            "request": "launch",
+            "mainClass": "com.java.length.comp.longobj.LongLength",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrimeNumbersTillUserDesiredNumber",
+            "request": "launch",
+            "mainClass": "com.java.loop.forloop.examples.PrimeNumbersTillUserDesiredNumber",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseIntegerNumber",
+            "request": "launch",
+            "mainClass": "com.java.loop.forloop.examples.ReverseIntegerNumber",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashingTest",
+            "request": "launch",
+            "mainClass": "com.java.map.hashmap.HashingTest",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch UnknownKeyAccessInHashMap",
+            "request": "launch",
+            "mainClass": "com.java.map.hashmap.UnknownKeyAccessInHashMap",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch NullCheck",
+            "request": "launch",
+            "mainClass": "com.java.nullcheck.NullCheck",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch FactorialNumber",
+            "request": "launch",
+            "mainClass": "com.java.number.examples.FactorialNumber",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch UnderScore_works",
+            "request": "launch",
+            "mainClass": "com.java.numeric.literals.examples.UnderScore_works",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Operators",
+            "request": "launch",
+            "mainClass": "com.java.operator.example.Operators",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch BitWiseAndExample",
+            "request": "launch",
+            "mainClass": "com.java.operator.examples.BitWiseAndExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch PostAndPreIncrementExample",
+            "request": "launch",
+            "mainClass": "com.java.operators.increment.examples.PostAndPreIncrementExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Balloon",
+            "request": "launch",
+            "mainClass": "com.java.passbyvalue.Balloon",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch PassByValue",
+            "request": "launch",
+            "mainClass": "com.java.passbyvalue.PassByValue",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConvertPDFPagesToImages",
+            "request": "launch",
+            "mainClass": "com.java.pdf.pdfbox.examples.ConvertPDFPagesToImages",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExtractPDFPagesAndSaveAsNewPDFPage",
+            "request": "launch",
+            "mainClass": "com.java.pdf.pdfbox.examples.ExtractPDFPagesAndSaveAsNewPDFPage",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch MethodOverridingComputer",
+            "request": "launch",
+            "mainClass": "com.java.polymorphism.runtime.examples.MethodOverridingComputer",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch RuntimePolymorphism",
+            "request": "launch",
+            "mainClass": "com.java.polymorphism.runtime.examples.RuntimePolymorphism",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindTheSmallestPositiveIntegerInASequence",
+            "request": "launch",
+            "mainClass": "com.java.practice.interview.FindTheSmallestPositiveIntegerInASequence",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch AddEmployeeToListWithoutGenericImplementation",
+            "request": "launch",
+            "mainClass": "com.java.practice.interview.dbs.AddEmployeeToListWithoutGenericImplementation",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Artist",
+            "request": "launch",
+            "mainClass": "com.java.practice.interview.dbs.Artist",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ChainingStreamOperations",
+            "request": "launch",
+            "mainClass": "com.java.practice.interview.dbs.ChainingStreamOperations",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Demo",
+            "request": "launch",
+            "mainClass": "com.java.practice.interview.dbs.Demo",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Equal",
+            "request": "launch",
+            "mainClass": "com.java.practice.interview.dbs.Equal",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hedges",
+            "request": "launch",
+            "mainClass": "com.java.practice.interview.dbs.Hedges",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReturnNullInTernoryOperator",
+            "request": "launch",
+            "mainClass": "com.java.practice.interview.dbs.ReturnNullInTernoryOperator",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Stateful",
+            "request": "launch",
+            "mainClass": "com.java.practice.interview.dbs.Stateful",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch StaticIntegerIncrement",
+            "request": "launch",
+            "mainClass": "com.java.practice.interview.dbs.StaticIntegerIncrement",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestClass",
+            "request": "launch",
+            "mainClass": "com.java.practice.interview.dbs.TestClass",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tester",
+            "request": "launch",
+            "mainClass": "com.java.practice.interview.dbs.Tester",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch X",
+            "request": "launch",
+            "mainClass": "com.java.practice.interview.dbs.X",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConvertIntArrayToIntCountUsingLambda",
+            "request": "launch",
+            "mainClass": "com.java.practice.interview.online.multiplechoice.techwave.ConvertIntArrayToIntCountUsingLambda",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch IsThisProgramCauseMemoryLeak",
+            "request": "launch",
+            "mainClass": "com.java.practice.interview.online.multiplechoice.techwave.IsThisProgramCauseMemoryLeak",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch PassingLocalVariableToLambdaExpression",
+            "request": "launch",
+            "mainClass": "com.java.practice.interview.online.multiplechoice.techwave.PassingLocalVariableToLambdaExpression",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch IntegerArrayReturnCountOfOnes",
+            "request": "launch",
+            "mainClass": "com.java.practice.interview.online.question.techwave.IntegerArrayReturnCountOfOnes",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch NonRepeatingCharacterInAString",
+            "request": "launch",
+            "mainClass": "com.java.practice.interview.online.question.techwave.NonRepeatingCharacterInAString",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReturnMaxPossibleValueObtainedByInserting5InsideDecimalRepresentation",
+            "request": "launch",
+            "mainClass": "com.java.practice.interview.online.question.techwave.ReturnMaxPossibleValueObtainedByInserting5InsideDecimalRepresentation",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReplaceStringWithAnotherString",
+            "request": "launch",
+            "mainClass": "com.java.regex.string.ReplaceStringWithAnotherString",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch DefaultSortWhatEverDataInsert",
+            "request": "launch",
+            "mainClass": "com.java.set.example.DefaultSortWhatEverDataInsert",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SortAnIntegerArrayUsingMergeSortAlgorithm",
+            "request": "launch",
+            "mainClass": "com.java.site.java67.algorithm.examples.SortAnIntegerArrayUsingMergeSortAlgorithm",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringArraySize",
+            "request": "launch",
+            "mainClass": "com.java.size.string.StringArraySize",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExecutionOrderOfStaticBlocksAndVariables",
+            "request": "launch",
+            "mainClass": "com.java.statickeyword.example.ExecutionOrderOfStaticBlocksAndVariables",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch MultipleStaticblocks",
+            "request": "launch",
+            "mainClass": "com.java.statickeyword.example.MultipleStaticblocks",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SimpleStaticExample",
+            "request": "launch",
+            "mainClass": "com.java.statickeyword.example.SimpleStaticExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch StaticClass",
+            "request": "launch",
+            "mainClass": "com.java.statickeyword.example.StaticClass",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch StaticKeyWordExample",
+            "request": "launch",
+            "mainClass": "com.java.statickeyword.example.StaticKeyWordExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch StaticKeyWordInitializationExample",
+            "request": "launch",
+            "mainClass": "com.java.statickeyword.example.StaticKeyWordInitializationExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch StaticMemberCanBeAccessedBeforeInstantiatingAClass",
+            "request": "launch",
+            "mainClass": "com.java.statickeyword.example.StaticMemberCanBeAccessedBeforeInstantiatingAClass",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch StaticMethod",
+            "request": "launch",
+            "mainClass": "com.java.statickeyword.example.StaticMethod",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch StaticVariable",
+            "request": "launch",
+            "mainClass": "com.java.statickeyword.example.StaticVariable",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseString",
+            "request": "launch",
+            "mainClass": "com.java.string.example.ReverseString",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch FinalClassExample",
+            "request": "launch",
+            "mainClass": "com.java.string.immutable.example.FinalClassExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ImmutableOrderTest",
+            "request": "launch",
+            "mainClass": "com.java.string.immutable.example.ImmutableOrderTest",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringImmutableExample",
+            "request": "launch",
+            "mainClass": "com.java.string.immutable.example.StringImmutableExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringReplace",
+            "request": "launch",
+            "mainClass": "com.java.string.replace.example.StringReplace",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SplitNameAndEmailFromString",
+            "request": "launch",
+            "mainClass": "com.java.string.substring.SplitNameAndEmailFromString",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SubString(1)",
+            "request": "launch",
+            "mainClass": "com.java.string.substring.SubString",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch OddEvenPrintMain",
+            "request": "launch",
+            "mainClass": "com.java.thread.OddEvenPrintMain",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintEvenOddNumbersUsingThread",
+            "request": "launch",
+            "mainClass": "com.java.thread.PrintEvenOddNumbersUsingThread",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch TaskEvenOdd",
+            "request": "launch",
+            "mainClass": "com.java.thread.TaskEvenOdd",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExecuteTaskEvery24Hours",
+            "request": "launch",
+            "mainClass": "com.java.thread.task.ExecuteTaskEvery24Hours",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch RunSingleThreadEvery2Seconds",
+            "request": "launch",
+            "mainClass": "com.java.thread.task.RunSingleThreadEvery2Seconds",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch RunTwoThreadEvery2Seconds",
+            "request": "launch",
+            "mainClass": "com.java.thread.task.RunTwoThreadEvery2Seconds",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArraysFill",
+            "request": "launch",
+            "mainClass": "com.java.twitter.googleindia.ArraysFill",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch MethodReferenceToClassInstanceMethodExample",
+            "request": "launch",
+            "mainClass": "com.java8.site.beginnersbook.methodreference.examples.MethodReferenceToClassInstanceMethodExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch MethodReferenceToConstructorExample",
+            "request": "launch",
+            "mainClass": "com.java8.site.beginnersbook.methodreference.examples.MethodReferenceToConstructorExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch MethodReferenceToStaticMethodExample",
+            "request": "launch",
+            "mainClass": "com.java8.site.beginnersbook.methodreference.examples.MethodReferenceToStaticMethodExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch MethodRererenceToInstanceMethodOfObjectExample",
+            "request": "launch",
+            "mainClass": "com.java8.site.beginnersbook.methodreference.examples.MethodRererenceToInstanceMethodOfObjectExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch StreamExample",
+            "request": "launch",
+            "mainClass": "com.java8.stream.StreamExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Crane",
+            "request": "launch",
+            "mainClass": "com.practice.java.abstractclass.examples.Crane",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SortAlphabetsUsingFunctionInterface",
+            "request": "launch",
+            "mainClass": "com.practice.java.array.examples.SortAlphabetsUsingFunctionInterface",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SortEmployeeList",
+            "request": "launch",
+            "mainClass": "com.practice.java.array.examples.SortEmployeeList",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch DifferenceBetweenArrayListAndLinkedList",
+            "request": "launch",
+            "mainClass": "com.practice.java.collection.difference.examples.DifferenceBetweenArrayListAndLinkedList",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example1",
+            "request": "launch",
+            "mainClass": "com.practice.java.collection.difference.examples.Example1",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch CollectionInsertExample",
+            "request": "launch",
+            "mainClass": "com.practice.java.collection.examples.CollectionInsertExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ListInsertExample",
+            "request": "launch",
+            "mainClass": "com.practice.java.collection.examples.ListInsertExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestTreeMap(1)",
+            "request": "launch",
+            "mainClass": "com.practice.java.collection.examples.TestTreeMap",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashtableMethodComputeIfAbsentExample",
+            "request": "launch",
+            "mainClass": "com.practice.java.collection.map.examples.HashtableMethodComputeIfAbsentExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ListStateToMap",
+            "request": "launch",
+            "mainClass": "com.practice.java.collections.convert.examples.ListStateToMap",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintValuesBasedOnArrayValueCondition",
+            "request": "launch",
+            "mainClass": "com.practice.java.condition.forloop.PrintValuesBasedOnArrayValueCondition",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConvertStringToDate",
+            "request": "launch",
+            "mainClass": "com.practice.java.date.format.ConvertStringToDate",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch StudentBuilderExample",
+            "request": "launch",
+            "mainClass": "com.practice.java.designpatterns.builder.StudentBuilderExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch DifferenceBetweenPlusEqualAndEqualPlus",
+            "request": "launch",
+            "mainClass": "com.practice.java.differencebetween.operators.assignment.DifferenceBetweenPlusEqualAndEqualPlus",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch EncapsulationExample",
+            "request": "launch",
+            "mainClass": "com.practice.java.encapsulation.examples.EncapsulationExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestEncapsulation",
+            "request": "launch",
+            "mainClass": "com.practice.java.encapsulation.examples.TestEncapsulation",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch HandleMultipleThrowsExceptions",
+            "request": "launch",
+            "mainClass": "com.practice.java.exception.throwskeyword.HandleMultipleThrowsExceptions",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch HashMapOverrideEqualsAndHashCodeMethods",
+            "request": "launch",
+            "mainClass": "com.practice.java.hashmap.examples.HashMapOverrideEqualsAndHashCodeMethods",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch BaseClass",
+            "request": "launch",
+            "mainClass": "com.practice.java.inheritance.examples.BaseClass",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch DerivedBike",
+            "request": "launch",
+            "mainClass": "com.practice.java.inheritance.examples.DerivedBike",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch HierarchicalInheritance",
+            "request": "launch",
+            "mainClass": "com.practice.java.inheritance.examples.HierarchicalInheritance",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch InheritanceDataAccess",
+            "request": "launch",
+            "mainClass": "com.practice.java.inheritance.examples.InheritanceDataAccess",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SubChildDoesNotAccessParentMethod",
+            "request": "launch",
+            "mainClass": "com.practice.java.inheritance.examples.SubChildDoesNotAccessParentMethod",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch AReturnStatementInTheFinallyBlockToo",
+            "request": "launch",
+            "mainClass": "com.practice.java.interview.AReturnStatementInTheFinallyBlockToo",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch AReturnStatementInTheTryBlock",
+            "request": "launch",
+            "mainClass": "com.practice.java.interview.AReturnStatementInTheTryBlock",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Print3XArray",
+            "request": "launch",
+            "mainClass": "com.practice.java.interview.Print3XArray",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch A",
+            "request": "launch",
+            "mainClass": "com.practice.java.interview.capgemeni.abstractclass.examples.A",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch WhenGarbageCollectorInvoked",
+            "request": "launch",
+            "mainClass": "com.practice.java.interview.productbased.adp.WhenGarbageCollectorInvoked",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch MultipleInheritanceExample",
+            "request": "launch",
+            "mainClass": "com.practice.java.interview.servicebased.deloitte.MultipleInheritanceExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch MultipleInheritanceWithFinalBaseMethodExample",
+            "request": "launch",
+            "mainClass": "com.practice.java.interview.servicebased.deloitte.MultipleInheritanceWithFinalBaseMethodExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountNumberOfPossibleOccurrenceOfNumberInArrayUsingLambda",
+            "request": "launch",
+            "mainClass": "com.practice.java.lambda.count.CountNumberOfPossibleOccurrenceOfNumberInArrayUsingLambda",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch CreateRandomNumber",
+            "request": "launch",
+            "mainClass": "com.practice.java.number.examples.CreateRandomNumber",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch RandomNumberFromTill",
+            "request": "launch",
+            "mainClass": "com.practice.java.number.examples.RandomNumberFromTill",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SignedRightShiftOperatorExample",
+            "request": "launch",
+            "mainClass": "com.practice.java.operator.example.SignedRightShiftOperatorExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test(1)",
+            "request": "launch",
+            "mainClass": "com.practice.java.operator.example.Test",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch MethodOverloadingExample",
+            "request": "launch",
+            "mainClass": "com.practice.java.polymorphism.examples.MethodOverloadingExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SortAMap",
+            "request": "launch",
+            "mainClass": "com.practice.java.preparation.interview.jpmorganchase.SortAMap",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SerialExample",
+            "request": "launch",
+            "mainClass": "com.practice.java.serializable.example.SerialExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SerializableExample",
+            "request": "launch",
+            "mainClass": "com.practice.java.serializable.example.SerializableExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Emp",
+            "request": "launch",
+            "mainClass": "com.practice.java.statickeyword.example.Emp",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch StaticVariableUpdateInClassInstance",
+            "request": "launch",
+            "mainClass": "com.practice.java.statickeyword.example.StaticVariableUpdateInClassInstance",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch VariableDemo",
+            "request": "launch",
+            "mainClass": "com.practice.java.statickeyword.example.VariableDemo",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch StringEqual",
+            "request": "launch",
+            "mainClass": "com.practice.java.string.equal.StringEqual",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SubChildBaseThread",
+            "request": "launch",
+            "mainClass": "com.practice.java.thread.SubChildBaseThread",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintOddAndEvenNumbersByTwoThreadsInJava",
+            "request": "launch",
+            "mainClass": "com.practice.java.thread.task.PrintOddAndEvenNumbersByTwoThreadsInJava",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch FinalClassExample(1)",
+            "request": "launch",
+            "mainClass": "com.practice.journaldev.java.FinalClassExample",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch CompareArrayAndFilterDuplicateValues",
+            "request": "launch",
+            "mainClass": "com.practice.practice.java.array.compare.CompareArrayAndFilterDuplicateValues",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch UserInput",
+            "request": "launch",
+            "mainClass": "com.test.dome.java.online.UserInput",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(1)",
+            "request": "launch",
+            "mainClass": "lombok.launch.Main",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lister",
+            "request": "launch",
+            "mainClass": "org.apache.commons.compress.archivers.Lister",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch CLI",
+            "request": "launch",
+            "mainClass": "org.apache.commons.compress.archivers.sevenz.CLI",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main(2)",
+            "request": "launch",
+            "mainClass": "org.apache.log4j.chainsaw.Main",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch PropertyPrinter",
+            "request": "launch",
+            "mainClass": "org.apache.log4j.config.PropertyPrinter",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch LF5Appender",
+            "request": "launch",
+            "mainClass": "org.apache.log4j.lf5.LF5Appender",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch StartLogFactor5",
+            "request": "launch",
+            "mainClass": "org.apache.log4j.lf5.StartLogFactor5",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch JMSSink",
+            "request": "launch",
+            "mainClass": "org.apache.log4j.net.JMSSink",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SimpleSocketServer",
+            "request": "launch",
+            "mainClass": "org.apache.log4j.net.SimpleSocketServer",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SocketServer",
+            "request": "launch",
+            "mainClass": "org.apache.log4j.net.SocketServer",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Roller",
+            "request": "launch",
+            "mainClass": "org.apache.log4j.varia.Roller",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Version",
+            "request": "launch",
+            "mainClass": "org.apache.poi.Version",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch EscherDump",
+            "request": "launch",
+            "mainClass": "org.apache.poi.ddf.EscherDump",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch HPSFPropertiesExtractor",
+            "request": "launch",
+            "mainClass": "org.apache.poi.hpsf.extractor.HPSFPropertiesExtractor",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch PropertyIDMap",
+            "request": "launch",
+            "mainClass": "org.apache.poi.hpsf.wellknown.PropertyIDMap",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch BiffDrawingToXml",
+            "request": "launch",
+            "mainClass": "org.apache.poi.hssf.dev.BiffDrawingToXml",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch BiffViewer",
+            "request": "launch",
+            "mainClass": "org.apache.poi.hssf.dev.BiffViewer",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch EFBiffViewer",
+            "request": "launch",
+            "mainClass": "org.apache.poi.hssf.dev.EFBiffViewer",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch FormulaViewer",
+            "request": "launch",
+            "mainClass": "org.apache.poi.hssf.dev.FormulaViewer",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReSave",
+            "request": "launch",
+            "mainClass": "org.apache.poi.hssf.dev.ReSave",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch RecordLister",
+            "request": "launch",
+            "mainClass": "org.apache.poi.hssf.dev.RecordLister",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExcelExtractor",
+            "request": "launch",
+            "mainClass": "org.apache.poi.hssf.extractor.ExcelExtractor",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch OldExcelExtractor",
+            "request": "launch",
+            "mainClass": "org.apache.poi.hssf.extractor.OldExcelExtractor",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch OOXMLLister",
+            "request": "launch",
+            "mainClass": "org.apache.poi.ooxml.dev.OOXMLLister",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch OOXMLPrettyPrint",
+            "request": "launch",
+            "mainClass": "org.apache.poi.ooxml.dev.OOXMLPrettyPrint",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch CommandLineTextExtractor",
+            "request": "launch",
+            "mainClass": "org.apache.poi.ooxml.extractor.CommandLineTextExtractor",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch POIFSDump",
+            "request": "launch",
+            "mainClass": "org.apache.poi.poifs.dev.POIFSDump",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch POIFSLister",
+            "request": "launch",
+            "mainClass": "org.apache.poi.poifs.dev.POIFSLister",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch POIFSViewer",
+            "request": "launch",
+            "mainClass": "org.apache.poi.poifs.dev.POIFSViewer",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch POIFSReader",
+            "request": "launch",
+            "mainClass": "org.apache.poi.poifs.eventfilesystem.POIFSReader",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch POIFSFileSystem",
+            "request": "launch",
+            "mainClass": "org.apache.poi.poifs.filesystem.POIFSFileSystem",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch VBAMacroExtractor",
+            "request": "launch",
+            "mainClass": "org.apache.poi.poifs.macros.VBAMacroExtractor",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch DrawingDump",
+            "request": "launch",
+            "mainClass": "org.apache.poi.util.DrawingDump",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch FontMetricsDumper",
+            "request": "launch",
+            "mainClass": "org.apache.poi.util.FontMetricsDumper",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch HexDump",
+            "request": "launch",
+            "mainClass": "org.apache.poi.util.HexDump",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch XDGFVisioExtractor",
+            "request": "launch",
+            "mainClass": "org.apache.poi.xdgf.extractor.XDGFVisioExtractor",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch HierarchyPrinter",
+            "request": "launch",
+            "mainClass": "org.apache.poi.xdgf.util.HierarchyPrinter",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch VsdxToPng",
+            "request": "launch",
+            "mainClass": "org.apache.poi.xdgf.util.VsdxToPng",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch XSLFPowerPointExtractor",
+            "request": "launch",
+            "mainClass": "org.apache.poi.xslf.extractor.XSLFPowerPointExtractor",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch PPTX2PNG",
+            "request": "launch",
+            "mainClass": "org.apache.poi.xslf.util.PPTX2PNG",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch XSSFBEventBasedExcelExtractor",
+            "request": "launch",
+            "mainClass": "org.apache.poi.xssf.extractor.XSSFBEventBasedExcelExtractor",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch XSSFEventBasedExcelExtractor",
+            "request": "launch",
+            "mainClass": "org.apache.poi.xssf.extractor.XSSFEventBasedExcelExtractor",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch XSSFExcelExtractor",
+            "request": "launch",
+            "mainClass": "org.apache.poi.xssf.extractor.XSSFExcelExtractor",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch XWPFWordExtractor",
+            "request": "launch",
+            "mainClass": "org.apache.poi.xwpf.extractor.XWPFWordExtractor",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch JarHelper",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.common.JarHelper",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch NameUtil",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.common.NameUtil",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Inst2Xsd",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.inst2xsd.Inst2Xsd",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch JamServiceFactory",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.jam.JamServiceFactory",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch ParserClassBuilder",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.jam.internal.parser.ParserClassBuilder",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch REUtil",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.regex.REUtil",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch EditBuildScript",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.repackage.EditBuildScript",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Repackage",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.repackage.Repackage",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch Diff",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.tool.Diff",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch FactorImports",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.tool.FactorImports",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch InstanceValidator",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.tool.InstanceValidator",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrettyPrinter",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.tool.PrettyPrinter",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch RunXQuery",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.tool.RunXQuery",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SchemaCompiler",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.tool.SchemaCompiler",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SchemaCopy",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.tool.SchemaCopy",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SchemaResourceManager",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.tool.SchemaResourceManager",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch StreamInstanceValidator",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.tool.StreamInstanceValidator",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch TypeHierarchyPrinter",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.tool.TypeHierarchyPrinter",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch XSTCTester",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.tool.XSTCTester",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch XsbDumper",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.tool.XsbDumper",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch XPathGenerator",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.xpathgen.XPathGenerator",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch SchemaInstanceGenerator",
+            "request": "launch",
+            "mainClass": "org.apache.xmlbeans.impl.xsd2inst.SchemaInstanceGenerator",
+            "projectName": "javaproject_v1"
+        },
+        {
+            "type": "java",
+            "name": "Launch GetArrayObjectFromJsonText",
+            "request": "launch",
+            "mainClass": "org.json.example.readtext.GetArrayObjectFromJsonText",
+            "projectName": "javaproject_v1"
+        }
+    ]
+}
