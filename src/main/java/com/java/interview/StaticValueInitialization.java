@@ -1,4 +1,4 @@
-package com.java.interview.nextlevel;
+package com.java.interview;
 
 /**
  * @author P.V. UdayKiran

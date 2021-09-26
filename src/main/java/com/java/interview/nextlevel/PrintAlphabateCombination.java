@@ -1,4 +1,4 @@
-package com.java.interview;
+package com.java.interview.nextlevel;
 
 /**
  * 
