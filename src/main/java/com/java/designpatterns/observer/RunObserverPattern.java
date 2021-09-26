@@ -10,12 +10,14 @@ public class RunObserverPattern {
         MessageWeatherObservable mwObservable = new MessageWeatherObservable();
         mwObservable.add(msOne);
         mwObservable.add(msTwo);
-
+        
+        System.out.println("-------------------- Notify Update --------------------");
         mwObservable.notifyUpdate(new Message("Hyderabad Weather 24 °C | °F"));//msOne and msTwo will receive the update
 
         mwObservable.remove(msOne);//Removing Observer
         mwObservable.add(msThree);
 
+        System.out.println("-------------------- Notify Update --------------------");
         mwObservable.notifyUpdate(new Message("Hyderabad Weather 23 °C | °F"));//msTwo and msThree will receive the update
     }
 }
