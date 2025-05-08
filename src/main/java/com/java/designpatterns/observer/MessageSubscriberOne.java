@@ -16,5 +16,21 @@ public class MessageSubscriberOne implements Observer {
     public void update(Message message) {
         LOG.info("MessageSubscriberOne:: {}", message.getMessageContent());
     }
+
+	/**
+	 * @see com.java.designpatterns.observer.Observer#removeMessage()
+	 */
+	@Override
+	public String removeMessage() {
+		return "Removing MessageSubscriberOne";
+	}
+
+	/**
+	 * @see com.java.designpatterns.observer.Observer#addingMessage()
+	 */
+	@Override
+	public String addingMessage() {
+		return "Adding MessageSubscriberOne";
+	}
     
 }

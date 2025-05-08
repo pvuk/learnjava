@@ -13,11 +13,13 @@ public class MessageWeatherObservable implements Observable {
 
     @Override
     public void add(Observer iObserver) {
+    	System.out.println(iObserver.addingMessage());
         observers.add(iObserver);
     }
 
     @Override
     public void remove(Observer iObserver) {
+    	System.out.println(iObserver.removeMessage());
         observers.remove(iObserver);
     }
 

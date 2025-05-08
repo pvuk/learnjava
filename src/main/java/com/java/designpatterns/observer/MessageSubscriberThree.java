@@ -16,4 +16,20 @@ public class MessageSubscriberThree implements Observer {
         LOG.info("MessageSubscriberThree:: {}", message.getMessageContent());
     }
 
+	/**
+	 * @see com.java.designpatterns.observer.Observer#removeMessage()
+	 */
+	@Override
+	public String removeMessage() {
+		return "Removing MessageSubscriberThree";
+	}
+
+	/**
+	 * @see com.java.designpatterns.observer.Observer#addingMessage()
+	 */
+	@Override
+	public String addingMessage() {
+		return "Adding MessageSubscriberThree";
+	}
+
 }

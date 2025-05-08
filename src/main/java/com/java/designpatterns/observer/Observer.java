@@ -6,4 +6,18 @@ package com.java.designpatterns.observer;
 public interface Observer {
 
     public void update(Message message);
+
+	/**
+	 * @return
+	 * @author P.V. UdayKiran
+	 * @since created on Thu 08-May-2025 22:13
+	 */
+	public String removeMessage();
+
+	/**
+	 * @return
+	 * @author P.V. UdayKiran
+	 * @since created on Thu 08-May-2025 22:22
+	 */
+	public String addingMessage();
 }
