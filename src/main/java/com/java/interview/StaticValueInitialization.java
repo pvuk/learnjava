@@ -26,7 +26,7 @@ public class StaticValueInitialization {
 		System.out.println("i value: "+ i);//print 0, because constructor not called
 		System.out.println("integer value: "+ integer);// integer value is null
 
-		StaticValueInitialization staticValueInitialization = new StaticValueInitialization();
+//		StaticValueInitialization staticValueInitialization = new StaticValueInitialization();
 		System.out.println(i);// i value is 1, constructor called.
 		StaticValueInitialization.i = 2;
 		StaticValueInitialization.integer = 3;
