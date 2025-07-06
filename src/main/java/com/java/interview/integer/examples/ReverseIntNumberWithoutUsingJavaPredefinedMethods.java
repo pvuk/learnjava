@@ -17,8 +17,9 @@ public class ReverseIntNumberWithoutUsingJavaPredefinedMethods {
 		int number = 2489, reverse = 0;
 		String strReverseNum = "";
 		while(number > 0) {
-			reverse = reverse * 10 + number % 10;// % gets remainder
-			strReverseNum += String.valueOf(number % 10);//Using String 2000 reverse 0002
+			int digit = number % 10;//Get the last digit
+			reverse = reverse * 10 + digit;// Build the reversed number, (!!! delete % gets remainder)
+//			strReverseNum += String.valueOf(number % 10);//Using String 2000 reverse 0002
 //			log.info("Reverse: {}", reverse);
 			number /= 10;// 2489 divide by 10 results 248.9, the return type is integer, it takes 248 as a result
 		}
