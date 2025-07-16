@@ -45,6 +45,19 @@ public class PrimeNumbersTillUserDesiredNumber {
 				scanner.close();
 			}
 		}
+		
+		int primeNumbersUpto = 50;
+		System.out.println("\nPrime Numbers Upto: "+ primeNumbersUpto);
+		for(int i = 0; i < primeNumbersUpto; i++) {
+			boolean isPrime = true;
+			for(int j = 1; j < i / 2; j++) {
+				if(i % 2 == 0) {
+					isPrime = false;
+					break;
+				}
+			}
+			if(isPrime) System.out.print(i +" ");
+		}
 	}
 
 	private static boolean isPrime(int numToCheck) {

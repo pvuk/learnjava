@@ -15,5 +15,17 @@ public class ReverseIntegerNumber {
 			i = i / 10;//remainder 123, 12, 1
 			log.info("{}", coff);
 		}
+		
+		/*
+		 * Example 2:
+		 * Time Complexity - O(log n)
+		 * Space Complexity - O(1)
+		 */
+		int j = 4562, revNum = 0;
+		while(j > 0) {
+			revNum = revNum * 10 + (j % 10);
+			j = j / 10;
+		}
+		System.out.println("Rever Number: "+ revNum);
 	}
 }
