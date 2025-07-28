@@ -52,7 +52,7 @@ public class SortAlphabetsUsingFunctionInterface {
 		 * SortAlphabets is FunctionalInterface, body is implemented using lambda
 		 * expression.
 		 */
-		SortAlphabets sortAlphatets = (List<String> alphabets, SortOrder direction) -> {
+		FunInt_SortAlphabets sortAlphatets = (List<String> alphabets, SortOrder direction) -> {
 			if (direction != null) {
 				if (direction.equals(SortOrder.ASC)) {
 					alphabets.sort(ascSortWords);
