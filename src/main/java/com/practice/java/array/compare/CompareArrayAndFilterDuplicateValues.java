@@ -1,4 +1,4 @@
-package com.practice.practice.java.array.compare;
+package com.practice.java.array.compare;
 
 /**
  * 

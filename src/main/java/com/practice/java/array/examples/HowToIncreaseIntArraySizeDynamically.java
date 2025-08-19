@@ -1,4 +1,4 @@
-package com.practice.practice.java.array.examples;
+package com.practice.java.array.examples;
 
 /**
  * 
