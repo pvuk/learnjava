@@ -1,8 +1,10 @@
 package com.java.interview.productbased.navionics;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 /**
  * 
@@ -19,6 +21,21 @@ public class SecondHighestNumberFromIntArray {
 		usingSwappingFindSecondLargestNumber(arr);
 		
 		print2largest(arr, arr.length);
+		
+		//Arrays.asList(arr);
+		/**
+		 * Code Ref: 
+		 * In Java, you can't directly pass a primitive array like int[] to List.of() because it will treat the entire array as a single element. To convert it properly into a List<Integer>, you need to box the int values into Integer objects.
+		 * This uses Arrays.stream(arr) to create an IntStream, then boxed() to convert each int to Integer, and finally collect(Collectors.toList()) to gather them into a List<Integer>.
+			Here’s how you can do it:
+		 */
+		List<Integer> asList = IntStream.of(arr).boxed().toList();
+		Integer secondHighestNumber = asList.stream().sorted(Comparator.reverseOrder())
+		.skip(1)
+		.findFirst()
+		.orElse(null);
+		System.out.println("\n2nd Highest Number: "+ secondHighestNumber);
+		
 	}
 	
 	private static void usingJava8ArrayStreamFindingSecondLargestNumber(int[] arr) {
@@ -37,7 +54,7 @@ public class SecondHighestNumberFromIntArray {
 				 */
 				if(j < arr.length-1) {
 					int temp;
-					//Swaping numbers
+					//Swapping numbers
 					if (arr[j] > arr[j + 1]) {
 						temp = arr[j+1];
 						arr[j+1] = arr[j];

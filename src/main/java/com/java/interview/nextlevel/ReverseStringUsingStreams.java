@@ -30,5 +30,9 @@ public class ReverseStringUsingStreams {
 		
 		String reduceStream = Stream.of(str.split("")).reduce("", (reversed, character) -> character + reversed);
 		System.out.println("\nStream Reverse: "+ reduceStream);
+		
+		String words = "Reverse words Using Java";
+		String reverseWords = Stream.of(words.split(" ")).reduce("", (reversed, character) -> character +" "+ reversed);
+		System.out.println("\nStream Reverse Words: "+ reverseWords);
 	}
 }
