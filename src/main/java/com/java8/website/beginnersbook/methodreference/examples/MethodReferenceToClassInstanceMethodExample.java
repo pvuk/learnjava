@@ -1,4 +1,4 @@
-package com.java8.site.beginnersbook.methodreference.examples;
+package com.java8.website.beginnersbook.methodreference.examples;
 import java.util.Arrays;
 /**
  * <a href="https://beginnersbook.com/2017/10/method-references-in-java-8/>3. Method reference to an instance method of an arbitrary object of a particular type</a>

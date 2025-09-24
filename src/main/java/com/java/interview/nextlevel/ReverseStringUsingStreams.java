@@ -16,6 +16,8 @@ public class ReverseStringUsingStreams {
 		int length = charArray.length;
 		IntStream.range(0, length).mapToObj(i -> charArray[(length - 1) - i]).forEach(System.out::print);
 		
+		System.out.println("\nReverse: "+ Stream.of(str.split("")).reduce("", (rev, ch) -> ch + rev));
+		
 		System.out.print("\n//Example 2: ");
 		IntStream.range(0, length)
 		.map(i -> length - 1 - i)

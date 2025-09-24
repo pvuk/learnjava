@@ -29,6 +29,6 @@ public class FindTheSmallestPositiveIntegerInASequence {
 		OptionalInt first = IntStream.iterate(1, i -> i + 1)//Code Ref: Uses IntStream.iterate() to generate an infinite stream of positive integers.
 				.filter(i -> !set.contains(i))//Finds the first integer not in the set.
 				.findFirst();
-		System.out.println("Smallest missing positive integer: "+ first);
+		System.out.println("Smallest missing positive integer: "+ first);//Output: 5
 	}
 }

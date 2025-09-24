@@ -15,7 +15,9 @@ public class CharacterReverse {
 		String str = "This is a test. Java 21";
 		List<String> list = Arrays.asList(str.split(""));
 		Map<String,Long> collect = list.stream().collect(Collectors.groupingBy(ch -> ch, Collectors.counting()));
-		collect.entrySet().stream().sorted(Map.Entry.<String, Long>comparingByValue().reversed()).limit(3).forEach(System.out::println);
+		collect.entrySet().stream().sorted(Map.Entry.<String, Long>comparingByValue().reversed())
+//		.limit(3)
+		.forEach(System.out::println);
 		
 	}
 }

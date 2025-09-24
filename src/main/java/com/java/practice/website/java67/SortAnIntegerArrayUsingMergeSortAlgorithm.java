@@ -1,4 +1,4 @@
-package com.java.site.java67.algorithm.examples;
+package com.java.practice.website.java67;
 
 import java.util.Arrays;
 
