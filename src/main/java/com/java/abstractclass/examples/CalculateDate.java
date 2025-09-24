@@ -78,26 +78,7 @@ public class CalculateDate extends AbstractDateOne{
 		calendar.add(Calendar.DAY_OF_MONTH, days);
 		return calendar.getTime();
 	}
-	
-	/**
-	 * ✅ What Happens If AbstractDateOne Is Not Abstract?</br>
-		If you don’t declare AbstractDateOne as abstract, it becomes a concrete class, which means:</br>
-		
-		You can instantiate it directly (though in most cases you won’t).</br>
-		You can still extend it in other classes like MyRedisService.</br>
-		You don’t need to implement any methods unless you override them.</br>
 
-	 * 🔍 When Should You Make It Abstract?</br>
-		You should make AbstractDateOne abstract if:</br>
-		
-		It’s meant to be a base class that provides shared functionality.</br>
-		You don’t want it to be instantiated directly.</br>
-		You want to enforce a contract for subclasses to implement certain methods.</br>
-
-	 * @author Venkata.Pulipati
-	 * @since Monday 25-August-2025 16:43:14
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		CalculateDate cDate = new CalculateDate();
 		Date newDate = cDate.addDays(new Date(), 40);
