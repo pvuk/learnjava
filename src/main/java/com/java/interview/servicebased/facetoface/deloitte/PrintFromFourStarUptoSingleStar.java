@@ -4,8 +4,8 @@ package com.java.interview.servicebased.facetoface.deloitte;
  * 
  * @author venkataudaykiranp
  * 
- * <p>     
- * write a program to print below pattern </br>
+ * <p> Loops in Java</br>     
+ * write a program to print Inverted Triangle pattern </br>
  *         **** </br> 
  *         *** </br>
  *         ** </br>
