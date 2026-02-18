@@ -1,0 +1,2 @@
+All examples in this package related to below examples.
+Here are several Java Stream patterns to get the top‑K elements by score from a list. I’ll use a simple model and then show variations (descending/ascending, handling ties, distinct by key, top‑K per group, and an O(n log K) approach using a heap).
