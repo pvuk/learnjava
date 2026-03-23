@@ -14,7 +14,7 @@ public class FindCountOfLettersInStatementUsingStreams {
 	public static void main(String[] args) {
 		String letters = "Hello, Count of letters in statement";
 		Arrays.asList(letters.split("")).stream()
-		.collect(Collectors.groupingBy(i -> i, Collectors.counting())).forEach((k, v) -> System.out.println("Letter: "+ k +", Count: "+ v));
+		.collect(Collectors.groupingBy(i -> i, Collectors.counting())).forEach((k, v) -> System.out.println("Letter: "+ k +" -> "+ v));
 		
 		System.out.println("Sort, Count of letters: ");
 		Arrays.asList(letters.split("")).stream()

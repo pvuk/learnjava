@@ -13,16 +13,16 @@ import java.util.stream.Collectors;
 public class SearchMultipleKeywords {
 	public static void main(String[] args) {
 	       // Define search keywords
-        List<String> searchWords = Arrays.asList("HPGSingle", "HPGBlock-Parent", "HPGBlock-Child");
+        List<String> searchWords = Arrays.asList("LPGSingle", "LPGBlock-Parent", "LPGBlock-Child");
 
         // Define input strings as key-value pairs
         List<String> inputStrings = Arrays.asList(
-            "EBP_HPGSingleToEBPNonContractNonAuto_100_Send=101111",
-            "EBP_HPGMessagesSingleToEBPContractcual_001_Connect=4",
-            "EBP_HPGBlockToEBPNonContractNonAutoChild_100_Send=51119",
-            "EBP_HPGBlockToEBPNonContractNonAutoConfirm_100_Send=51111",
-            "EBP_HPGBlockToEBPNonContractNonAutoParent_100_Send=51119",
-            "EBP_HPGBlockToEBPNonContractAutoConfirmParent_100_Send=219899"
+            "EBP_LPGSingleToEBPNonContractNonAuto_100_Send=101111",
+            "EBP_LPGDeliverSingleToEBPContractcual_001_Connect=4",
+            "EBP_LPGBlockToEBPNonContractNonAutoChild_100_Send=51119",
+            "EBP_LPGBlockToEBPNonContractNonAutoConfirm_100_Send=51111",
+            "EBP_LPGBlockToEBPNonContractNonAutoParent_100_Send=51119",
+            "EBP_LPGBlockToEBPNonContractAutoConfirmParent_100_Send=219899"
         );
 
         // Convert input strings to a Map<String, Integer>
