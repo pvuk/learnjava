@@ -34,7 +34,25 @@ class Dog3 {
 	Dog3(String c) {
 		color = c;
 	}
+	
+	/**
+	 * if not override below is the output:
+	 *  red dog - 10
+		black dog - 15
+		white dog - 5
+		white dog - 20</br>
 
+	if override below is the output:
+		red dog - 10
+		black dog - 15
+		white dog - 20</br>
+
+
+	 * @author Venkata.Pulipati
+	 * @since Thursday 26-March-2026 13:48:21
+	 * @param o
+	 * @return
+	 */
 	public boolean equals(Object o) {
 		return ((Dog3) o).color == this.color;
 	}

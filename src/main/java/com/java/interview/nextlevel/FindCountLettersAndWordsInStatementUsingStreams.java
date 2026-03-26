@@ -1,9 +1,7 @@
 package com.java.interview.nextlevel;
 
-import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 /**
  * @author Venkata.Pulipati

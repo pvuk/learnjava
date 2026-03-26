@@ -40,7 +40,6 @@ public class TestHashMap {
 
 			System.out.println("Producer ID: " + producerId +", ProducerId2: "+ producerId2);
 		} catch (UnknownHostException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
