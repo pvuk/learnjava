@@ -1,5 +1,7 @@
 package com.java.collection.examples;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.HashMap;
 import java.util.Map.Entry;
 
@@ -31,6 +33,17 @@ public class TestHashMap {
 		for (Entry<Dog, Integer> entry : hashMap.entrySet()) {
 			System.out.println(entry.getKey().toString() + " - " + entry.getValue());
 		}
+
+		try {
+			String producerId = InetAddress.getLocalHost().getHostName();
+			String producerId2 = InetAddress.getLocalHost().getHostAddress();
+
+			System.out.println("Producer ID: " + producerId +", ProducerId2: "+ producerId2);
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 	}
 }
 

@@ -17,7 +17,7 @@ public class DifferenceBetweenArrayListAndLinkedList {
 			arrlistobj.add("0. Practice.GeeksforGeeks.org"); 
 			arrlistobj.add("1. Quiz.GeeksforGeeks.org"); 
 			arrlistobj.add("2. Code.GeeksforGeeks.org"); 
-			arrlistobj.remove(1); // Remove value at index 2 
+			arrlistobj.remove(2); // Remove value at index 2 
 			System.out.println("ArrayList object output :" + arrlistobj); 
 
 			// Checking if an element is present. 
@@ -26,16 +26,20 @@ public class DifferenceBetweenArrayListAndLinkedList {
 			else
 				System.out.println("Not found"); 
 
-
-			LinkedList llobj = new LinkedList(); 
-			llobj.add("0. Practice.GeeksforGeeks.org"); 
-			llobj.add("1. Quiz.GeeksforGeeks.org"); 
-			llobj.add("2. Code.GeeksforGeeks.org"); 
-			llobj.remove("1. Quiz.GeeksforGeeks.org"); 
-			System.out.println("LinkedList object output :" + llobj); 
-
+			/**
+			 * Each element in LinkedList is called Node, each element in your list has a pointer a reference to the next Node,
+			 * so the LinkedList class starts with just a pointer to the first element in the list and after that each Node element in the list just has a reference a pointer sort to the next Node.
+			 *  
+			 */
+			LinkedList<String> llStrings = new LinkedList<>();//diamond operator <> introduced in Java 7 
+			llStrings.add("0. Practice.GeeksforGeeks.org"); 
+			llStrings.add("1. Quiz.GeeksforGeeks.org"); 
+			llStrings.add("2. Code.GeeksforGeeks.org"); 
+			llStrings.remove("2. Code.GeeksforGeeks.org"); 
+			System.out.println("LinkedList object output :" + llStrings); 
+			
 			// Checking if an element is present. 
-			if (llobj.contains("2. Code.GeeksforGeeks.org")) 
+			if (llStrings.contains("2. Code.GeeksforGeeks.org")) 
 				System.out.println("Found"); 
 			else
 				System.out.println("Not found"); 

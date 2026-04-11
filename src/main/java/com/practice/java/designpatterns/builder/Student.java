@@ -47,7 +47,7 @@ package com.practice.java.designpatterns.builder;
  *         <h2><span id="builder-design-pattern-in-java">Builder Design Pattern
  *         in Java</span></h2>
  *         <p>
- *         Let’s see how we can implement builder design pattern in java.
+ *         Letï¿½s see how we can implement builder design pattern in java.
  *         </p>
  *         <ol>
  *         <li>First of all you need to create a
@@ -75,7 +75,7 @@ package com.practice.java.designpatterns.builder;
  *         "https://dzone.com/articles/the-builder-pattern-for-class-with-many-constructo">What
  *         Is the Builder Pattern?</a></h1>
  *         <p>
- *         First, Let’s see how we can implement a builder design pattern.
+ *         First, Letï¿½s see how we can implement a builder design pattern.
  *         </p>
  *         <ol>
  *         <li>First of all, you need to create a public static nested class,
@@ -133,7 +133,7 @@ public class Student {
 		return address;
 	}
 		
-	private Student(StudentBuilder builder) {
+	private Student(Builder builder) {
 		this.firstName = builder.firstName;
 		this.lastName = builder.lastName;
 		this.age = builder.age;
@@ -148,7 +148,7 @@ public class Student {
 	}
 	
 	//Builder class
-	public static class StudentBuilder {
+	public static class Builder {
 		
 		//required parameters
 		private final String firstName;
@@ -158,22 +158,22 @@ public class Student {
 		private String phone;
 		private String address;
 		
-		public StudentBuilder(String firstName, String lastName) {
+		public Builder(String firstName, String lastName) {
 			this.firstName = firstName;
 			this.lastName = lastName;
 		}
 		
-		public StudentBuilder age(int age) {
+		public Builder age(int age) {
 			this.age = age;
 			return this;
 		}
 		
-		public StudentBuilder phone(String phone) {
+		public Builder phone(String phone) {
 			this.phone = phone;
 			return this;
 		}
 		
-		public StudentBuilder address(String address) {
+		public Builder address(String address) {
 			this.address = address;
 			return this;
 		}

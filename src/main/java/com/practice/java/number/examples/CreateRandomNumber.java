@@ -13,7 +13,7 @@ import java.util.stream.DoubleStream;
 public class CreateRandomNumber {
 	
 	private int randomNumberSize;
-	private static int totalNumbers;
+	private static int totalNumbers = 5;
 	
 	public static void main(String[] args) {
 		Random random = new Random();
