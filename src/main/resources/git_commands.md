@@ -44,8 +44,8 @@ You can sort by commit count using -n to find out the most important committers.
 # List/see all configuration
 > git config --list
 
-#eclipse github login not working
-##(Creating a fine-grained personal access token)[https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens]
+# Eclipse github login not working / Commit Not working. Create new token then use it as password. Follow below steps.
+## (Creating a fine-grained personal access token)[https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens]
 Note
 
 There is a limit of 50 fine-grained personal access tokens you can create. If you require more tokens or are building automations, consider using a GitHub App for better scalability and management. For more information, see Deciding when to build a GitHub App.
@@ -81,6 +81,8 @@ The REST API reference document for each endpoint states whether the endpoint wo
 Click Generate token.
 
 If you selected an organization as the resource owner and the organization requires approval for fine-grained personal access tokens, then your token will be marked as pending until it is reviewed by an organization administrator. Your token will only be able to read public resources until it is approved. If you are an owner of the organization, your request is automatically approved. For more information, see Reviewing and revoking personal access tokens in your organization.
+
+* Username and at password use newly generated token.
 
 ##Creating a personal access token (classic)
 Note
