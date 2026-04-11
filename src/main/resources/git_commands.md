@@ -84,7 +84,7 @@ If you selected an organization as the resource owner and the organization requi
 
 * Username and at password use newly generated token.
 
-##Creating a personal access token (classic)
+## Creating a personal access token (classic)
 Note
 
 Organization owners can restrict the access of personal access token (classic) to their organization. If you try to use a personal access token (classic) to access resources in an organization that has disabled personal access token (classic) access, your request will fail with a 403 response. Instead, you must use a GitHub App, OAuth app, or fine-grained personal access token.
@@ -116,7 +116,7 @@ Optionally, to copy the new token to your clipboard, click .
 Screenshot of the "Personal access tokens" page. Next to a blurred-out token, an icon of two overlapping squares is outlined in orange.
 To use your token to access resources owned by an organization that uses SAML single sign-on, authorize the token. For more information, see Authorizing a personal access token for use with SAML single sign-on in the GitHub Enterprise Cloud documentation.
 
-##Deleting a personal access token
+## Deleting a personal access token
 You should delete a personal access token if it is no longer needed. If you delete a personal access token that was used to create a deploy key, the deploy key will also be deleted.
 
 In the upper-right corner of any page on GitHub, click your profile photo, then click  Settings.
