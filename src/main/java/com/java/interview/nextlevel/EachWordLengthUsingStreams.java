@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
  */
 public class EachWordLengthUsingStreams {
 	public static void main(String[] args) {
-		String str = "each word length finding using java streams, duplicate word also handled";
+		String str = "each word length finding using java streams, duplicate word also handled";//duplicate > word
 		Arrays.stream(str.split(" "))
 		.collect(Collectors.toMap(k -> k, v -> v.length(), (duplicateKey, duplicateNewKey) -> duplicateKey, LinkedHashMap::new))
 		.forEach((k, v) -> System.out.println("word: "+ k +", length: "+ v));
