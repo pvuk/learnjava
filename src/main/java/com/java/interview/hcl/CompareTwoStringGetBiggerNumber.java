@@ -1,5 +1,9 @@
 package com.java.interview.hcl;
 
+import java.util.Arrays;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
+
 /**
  * 
  * @author P.V. UdayKiran
@@ -30,5 +34,7 @@ public class CompareTwoStringGetBiggerNumber {
 			}
 			System.out.println("Both numbers are equal");
 		}
+		
+//		int largeNumber = Arrays.asList(input1, input2).
 	}
 }

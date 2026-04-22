@@ -1,4 +1,7 @@
 package com.practice.java.website.javaguides;
+
+import java.util.stream.IntStream;
+
 /**
  * Palindrome Check: A recursive method checks if the string is a palindrome by comparing the first and last characters, then moving inward. 
  * If all characters match, the string is a palindrome.
@@ -32,6 +35,9 @@ public class CheckPalindrome {
 			.reduce("", (addOfValuesHereCome, nextValueHereCome) -> nextValueHereCome + addOfValuesHereCome);//l + "" > e + l"" > v + el" > e + vel" > l + evel"
 		System.out.println("Example 1: Given string: "+ example1 +", reversing string: "+ reduceExample +". If both are same it is palindrome: "+ example1.equals(reduceExample));
 		System.out.println("");
+		
+		boolean isPalindrome1 = IntStream.range(0, example1.length() / 2).allMatch(i -> example1.charAt(i) == example1.charAt(example1.length() - i - 1));
+		System.out.println("Example Using IntStream value: "+ isPalindrome1 +"> "+ isPalindrome1);
 		
 		String example2 = "hello";
 		boolean isPalindrome = isPalindrome(example2);

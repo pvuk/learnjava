@@ -16,7 +16,7 @@ public class ReverseStringUsingStreams {
 		int length = charArray.length;
 		IntStream.range(0, length).mapToObj(i -> charArray[(length - 1) - i]).forEach(System.out::print);
 		
-		System.out.println("\nReverse: "+ Stream.of(str.split("")).reduce("", (rev, ch) -> ch + rev));
+		System.out.println("\nReverse Using Streams: "+ Stream.of(str.split("")).reduce("", (rev, ch) -> ch + rev));
 		
 		System.out.print("\n//Example 2: ");
 		IntStream.range(0, length)
@@ -29,9 +29,6 @@ public class ReverseStringUsingStreams {
 					return character + reversed;//S"", tS, rtS, irtS, nirtS, gnirtS
 				});
 		System.out.println("\nReverse: "+ reverseString);
-		
-		String reduceStream = Stream.of(str.split("")).reduce("", (reversed, character) -> character + reversed);
-		System.out.println("\nStream Reverse: "+ reduceStream);
 		
 		String words = "Reverse words Using Java";
 		String reverseWords = Stream.of(words.split(" ")).reduce("", (reversed, character) -> character +" "+ reversed);

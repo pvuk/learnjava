@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 /**
  * @author P.V. UdayKiran
@@ -28,5 +29,9 @@ public class ReverseNumberUsingStreams {
 //		limit.forEach(val -> System.out.println(val));
 		
 		Arrays.asList(String.valueOf(number).split("")).stream().sorted(Collections.reverseOrder()).forEach(System.out::print); 
+		
+		String reverseNumber = Stream.of(String.valueOf(number).split(""))
+				.reduce("", (a, b) -> b + a);
+		System.out.println("\nReverse Number Using Streams: "+ reverseNumber);
 	}
 }

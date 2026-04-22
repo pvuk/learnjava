@@ -45,11 +45,11 @@ public class SortWordsUsingStreams {
         }
 
 		System.out.print("\nPrinting Ascii to characters: 65 to 90(AtoZ): ");
-		IntStream.range(65, 91)// 91 because upper bound is exclusive
+		IntStream.rangeClosed(65, 90)// if you use range then IntStream.range(65, 91) you need to mention 91 because upper bound is exclusive
 		.forEach(i -> System.out.print(i +" -> "+ (char) i +", "));//65 to 90(AtoZ)
 		
 		System.out.print("\nPrinting Ascii to characters: 97 to 122(atoz): ");
-		IntStream.range(97, 123)// 123 because upper bound is exclusive
+		IntStream.rangeClosed(97, 122)// if you use range then IntStream.range(91, 123) you need to mention 123 because upper bound is exclusive
 		.forEach(i -> System.out.print(i +" -> "+ (char) i +", "));//97 to 122(atoz)
 	}
 }

@@ -14,7 +14,7 @@ public class EachWordLengthUsingStreams {
 	public static void main(String[] args) {
 		String str = "each word length finding using java streams, duplicate word also handled";//duplicate > word
 		Arrays.stream(str.split(" "))
-		.collect(Collectors.toMap(k -> k, v -> v.length(), (duplicateKey, duplicateNewKey) -> duplicateKey, LinkedHashMap::new))
+		.collect(Collectors.toMap(k -> k, v -> v.length(), (duplicateKey, duplicateNewKey) -> duplicateKey, LinkedHashMap::new))//LinkedHashMap: This linked list defines the encounter order
 		.forEach((k, v) -> System.out.println("word: "+ k +", length: "+ v));
 	}
 }

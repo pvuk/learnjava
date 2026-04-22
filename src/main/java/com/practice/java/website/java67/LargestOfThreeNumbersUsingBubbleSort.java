@@ -4,7 +4,7 @@ package com.practice.java.website.java67;
  * @author Venkata.Pulipati
  * @since Tuesday 23-September-2025 12:51:55
  */
-public class LargestOfThreeNumbersFindUsingSort {
+public class LargestOfThreeNumbersUsingBubbleSort {
 	public static void main(String[] args) {
 		Integer[] numbers = {1, 5, 7, 20, 9, 50, 100};
 		//Bubble Sort in descending order
@@ -22,7 +22,7 @@ public class LargestOfThreeNumbersFindUsingSort {
 		System.out.println("Large Three Numbers: ");
 		int k = 0;
 		while(k < 3) {
-			System.out.print(numbers[k] +(k < 2? ", " : ""));
+			System.out.print(numbers[k] + (k < 2 ? ", " : ""));
 			k++;
 		}
 		
