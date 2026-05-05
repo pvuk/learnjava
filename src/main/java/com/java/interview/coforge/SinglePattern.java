@@ -9,10 +9,20 @@ public class SinglePattern {
 	
 	private static SinglePattern singlePattern = null;
 	
+	/**
+	 * ✅ Private constructor → prevents new keyword
+	 */
 	private SinglePattern() {
 		// TODO Auto-generated constructor stub
 	}
 	
+	/**
+	 * ✅ Static getInstance() → returns same instance
+	 * 
+	 * @author venkata.pulipati
+	 * @since Tuesday 05-May-2026 12:21:55
+	 * @return
+	 */
 	public static SinglePattern getInstance() {
 		if(singlePattern == null) {
 			singlePattern = new SinglePattern();
