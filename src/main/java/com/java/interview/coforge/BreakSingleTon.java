@@ -81,6 +81,8 @@ public class BreakSingleTon {
 			System.out.println(instanceOne == instanceTwo);
 		} catch (NoSuchMethodException e) {
 			e.printStackTrace();
+		} catch (IllegalAccessException e) {
+			e.printStackTrace();
 		}
 		
 		/*

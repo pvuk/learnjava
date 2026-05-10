@@ -11,4 +11,23 @@ package com.java.interview.designpatterns;
  */
 public enum EnumSingleton {
     INSTANCE;
+
+	private int counter;
+
+    // Constructor (implicitly private)
+    EnumSingleton() {
+        counter = 0;
+    }
+
+    public void increment() {
+        counter++;
+    }
+
+    public int getCounter() {
+        return counter;
+    }
+
+	public void showMessage() {
+        System.out.println("Hello from Enum Singleton!");
+    }
 }
