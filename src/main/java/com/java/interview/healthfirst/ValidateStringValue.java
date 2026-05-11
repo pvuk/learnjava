@@ -58,6 +58,37 @@ public static void main(String[] args) {
 			([A-Z][a-z]*)         → first word: 1 Capital + lowercase</br>
 			(\s[A-Z][a-z]*)*      → additional words (same pattern)</br>
 			$                     → end of string</br>
+			
+			More info...</br>
+			
+			With *</br>
+			Uday
+			Uday Pulipati
+			Uday Kiran Rao
+			✅ all valid
+			
+			Without *</br>
+			❌ Uday
+			✅ Uday Pulipati
+			❌ Uday Kiran Rao
+
+			| Symbol        | Meaning        |
+			|--------------|----------------|
+			| *            | 0 or more      |
+			| +            | 1 or more      |
+			| (no symbol)  | exactly once   |</br>
+			
+			✅ Simple Explanation (Interview Ready 🔥)</br>
+
+			* <p>* allows repetition (0 or more times).</p>
+			* <p>Without *, the pattern becomes mandatory and restricts input to exactly two words only.</p>
+			* 
+			* More Info...</br>
+			* Q: What if I want at least 2 words?</br>
+			👉 Use:</br>
+			^([A-Z][a-z]*)(\s[A-Z][a-z]*)+$</br>
+			
+			(+ = at least one repetition)</br>
          */
         String pattern = "^([A-Z][a-z]*)(\\s[A-Z][a-z]*)*$";// Pattern: Each word must start with uppercase followed by lowercase letters
         boolean validFormat = value.matches(pattern);

@@ -1,6 +1,7 @@
 package com.java.interview.integer.examples;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 /**
  * <p>
@@ -18,10 +19,54 @@ public class MoveAllZeroToEndOfArray {
 	public static void main(String[] args) {
 		int[] arr = { 1, 0, 2, 4, 6, 0, 0, 4, 8, 4, 0, 6, 7, 0, 11, 2, 0, 55, 1, 64, 0, 1, 0, 3, 8, 62, 10, 5, 0, 6, 0, 9, 22 };
 		System.out.println("Array: \n" + Arrays.toString(arr) +"\n");
-		usingMultipleLoops(arr);
-		usingSingleLoop(arr);
+		
+//		Code Ref: 👉 In Java, arrays are passed by reference (value of reference), so when the first method modifies arr, the second method gets the already modified (sorted/changed) array.
+//		usingMultipleLoops(arr);// modifies arr
+//		usingSingleLoop(arr);// receives already modified arr ❗
+		
+//		Code Ref: ✅ Quick Interview One‑liner
+//		Arrays are mutable and passed by reference in Java, so modifications in one method affect the original array. To avoid this, pass a clone of the array.
+//		🔹 Fix Option : Pass a Copy (Best Practice ✅)
+//		✔ This ensures each method gets a fresh copy
+//		✔ Original array remains unchanged
+		usingMultipleLoops(arr.clone());
+		usingSingleLoop(arr.clone());//Time Complexity O(n)
+		
+		usingStreams(arr.clone());//Time Complexity using Streams concat O(n)
 	}
 
+	private static void usingStreams(int[] arr) {
+		int[] result = IntStream.concat(Arrays.stream(arr).filter(x -> x != 0), // non-zeros first
+				Arrays.stream(arr).filter(x -> x == 0) // zeros later
+				).toArray();
+		System.out.println("Move Zero to end of Array using Streams: "+ Arrays.toString(result));
+	}
+
+	/**
+	 * | Variable | Purpose                                      |</br>
+		|----------|----------------------------------------------|</br>
+		| i        | Traverses the array                          |</br>
+		| count    | Tracks where next non-zero should be placed  |</br>
+		| temp     | Used for swapping                            |</br>
+		
+		✅ Step-by-Step Traversal</br>
+		| i | arr[i] | Action        | count | Array State                               |</br>
+		|---|--------|---------------|--------|-------------------------------------------|</br>
+		| 0 | 1      | swap(0,0)     | 1      | [1, 0, 2, 4, 6, 0, 0, 4, 8, 4]            |</br>
+		| 1 | 0      | skip          | 1      | unchanged                                 |</br>
+		| 2 | 2      | swap(2,1)     | 2      | [1, 2, 0, 4, 6, 0, 0, 4, 8, 4]            |</br>
+		| 3 | 4      | swap(3,2)     | 3      | [1, 2, 4, 0, 6, 0, 0, 4, 8, 4]            |</br>
+		| 4 | 6      | swap(4,3)     | 4      | [1, 2, 4, 6, 0, 0, 0, 4, 8, 4]            |</br>
+		| 5 | 0      | skip          | 4      | unchanged                                 |</br>
+		| 6 | 0      | skip          | 4      | unchanged                                 |</br>
+		| 7 | 4      | swap(7,4)     | 5      | [1, 2, 4, 6, 4, 0, 0, 0, 8, 4]            |</br>
+		| 8 | 8      | swap(8,5)     | 6      | [1, 2, 4, 6, 4, 8, 0, 0, 0, 4]            |</br>
+		| 9 | 4      | swap(9,6)     | 7      | [1, 2, 4, 6, 4, 8, 4, 0, 0, 0]            |</br>
+
+	 * @author Venkata.Pulipati
+	 * @since Monday 11-May-2026 11:30:49
+	 * @param arr
+	 */
 	private static void usingSingleLoop(int[] arr) {
 		
 		int temp, count = 0;
