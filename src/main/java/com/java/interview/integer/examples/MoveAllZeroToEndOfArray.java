@@ -75,7 +75,7 @@ public class MoveAllZeroToEndOfArray {
 				temp = arr[count];
 				arr[count] = arr[i];
 				arr[i] = temp;
-				count += 1;
+				count += 1;//Tracks where next non-zero should be placed
 			}
 		}
 		System.out.println("usingSingleLoop - After moved all zero's to end of Array: \n" + Arrays.toString(arr) +"\n");
