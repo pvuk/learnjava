@@ -1,5 +1,27 @@
 package com.java.interview.nextlevel;
 /**
+ * When to Use What (Interview Answer)</br>
+
+	✅ Use reduce()</br>
+	
+	Sum</br>
+	Min / Max</br>
+	Multiplication</br>
+	Single value result</br>
+	
+	
+	✅ Use collect()</br>
+	
+	List / Set / Map</br>
+	Grouping</br>
+	Partitioning</br>
+	Complex transformation</br>
+
+	Perfect Interview Answer</br>
+
+	“reduce() is used for immutable reduction where elements are combined into a single result using an associative function. collect(), on the other hand, is used for mutable reduction where elements are accumulated into containers like List, Set, or Map. In parallel streams, reduce requires associative operations, whereas collect is designed for safe concurrent accumulation using supplier, accumulator, and combiner.”</br>
+	
+	
  * @author P.V. UdayKiran
  * @version 1
  * @since created on Wed 18-Jun-2025 09:54

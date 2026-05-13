@@ -4,6 +4,43 @@ import java.util.stream.*;
 /**
  * Parallel streams improve performance for large datasets by leveraging multi-core processing.</br>
  * 
+ * ✅ Advanced Interview Answer (Perfect)</br>
+
+	“Parallel streams internally use ForkJoinPool and divide data into multiple chunks processed by worker threads. Each thread computes partial results which are merged using a combiner. This makes collectors critical in parallel streams. However, we must ensure stateless operations and avoid shared mutable state to prevent race conditions.”</br>
+	
+	✅ Real Stream Examples</br>
+
+	✅ Stateless (Correct)</br>
+	List<Integer> result =
+    list.parallelStream()
+        .map(x -> x * 2)
+        .collect(Collectors.toList());
+
+	❌ Stateful (Wrong)</br>
+	List<Integer> result = new ArrayList<>();
+
+	list.parallelStream()
+	    .forEach(x -> result.add(x * 2)); // ❌</br>
+	
+	
+
+	✅ Interview Perfect Answer</br>
+	
+	✅ Race Condition</br>
+	
+	“A race condition occurs when multiple threads access and modify shared data concurrently without proper synchronization, leading to unpredictable and incorrect results.”</br>
+	
+	
+	✅ Stateless</br>
+	
+	“Stateless operations do not rely on shared mutable data and each computation is independent, making them safe for parallel execution.”</br>
+	
+	
+	✅ Stateful</br>
+	
+	“Stateful operations depend on shared or changing data, which can cause race conditions and should be avoided in parallel streams.”</br>
+	
+	
  * @author Venkata.Pulipati
  * @since Wednesday 13-May-2026 12:16:56
  */
@@ -109,7 +146,182 @@ public class AverageSalesPerCity {
         );
 
         calculateAverage(transactions);
-}
+        
+        calculateAverageUsingCustomCollector(transactions);
+        
+        //✅ Example Showing Thread Usage
+        System.out.println("\n✅ Example Showing Thread Usage:");
+        exampleShowingThreadUsage(transactions);
+    }
+    
+    private static void exampleShowingThreadUsage(List<CitySales> transactions) {
+    	transactions.parallelStream()
+        .forEach(t -> {
+            System.out.println(Thread.currentThread().getName()
+                + " -> " + t.getCity());
+        });
+	}
+
+	/**
+     * Code Ref: Interview: 
+     * ✅ Interview Explanation (VERY IMPORTANT)</br>
+
+		“Collector has 4 key parts:
+		
+		Supplier → creates container (AvgAccumulator)
+		Accumulator → processes each element
+		Combiner → merges results from different threads
+		Finisher → transforms result into final output
+		
+		Combiner is mainly used in parallel streams.”</br>
+		
+		🔥 Follow-up Interview Questions</br>
+		Q: Why not use simple variables?
+		👉 Because parallel streams process chunks independently, so we need a thread-safe merge (combiner).</br>
+		
+		Q: What happens if combiner is wrong?</br>
+		👉 You get:
+		
+		Incorrect results
+		Data inconsistency in parallel execution</br>
+		
+		✅ 2. Thread Behavior in Parallel Streams (VERY IMPORTANT)</br>
+
+		✅ How Parallel Streams Work</br>
+			transactions.parallelStream()</br>
+		👉 Uses ForkJoinPool.commonPool()</br>
+		
+		✅ Internally</br>
+
+		1. Data is split into chunks
+		2. Each chunk runs in separate threads
+		3. Partial results are computed
+		4. Results are combined</br>
+		
+		✅ Visual Flow</br>
+		Main Thread
+		   |
+		Split Data
+		   |
+		-------------------------------
+		| Thread-1 | Thread-2 | Thread-3 |
+		|   Part A |   Part B |   Part C |
+		-------------------------------
+		        ↓ Combine
+		       Final Result</br>
+		       
+		✅ Key Concepts (Interview Must Know)</br>
+		✅ 1. ForkJoinPool</br>
+		
+		. Default pool used</br>
+		. Threads = CPU cores - 1</br>
+			ForkJoinPool.commonPool()</br>
+			
+		✅ 2. Work Stealing</br>
+		👉 If one thread finishes early:</br>
+		
+		It <b>steals tasks</b> from others</br>
+		✅ Improves performance</br>
+		
+		✅ 3. Order is NOT guaranteed</br>
+			parallelStream().forEach(...)</br>
+		
+		✅ Use if order matters:</br>
+			forEachOrdered()</br>
+			
+		✅ 4. Stateless vs Stateful (CRITICAL)</br>
+		✔ GOOD (stateless):</br>
+			.map(x -> x * 2)
+
+		❌ BAD (stateful):</br>
+			List<Integer> list = new ArrayList<>();
+			stream.parallel().forEach(x -> list.add(x)); // ❌ Unsafe
+
+		👉 Why? → Multiple threads modify same object</br>
+		
+		✅ 5. When Parallel Streams HELP</br>
+		✔ Large data
+		✔ CPU-intensive work
+		✔ Independent operations
+		❌ NOT good for:
+		
+		. Small datasets
+		. IO operations (DB, API calls)
+		. Shared mutable state</br>
+		
+		✅ Mutable State (Simple + Interview Explanation)</br>
+
+		✅ Definition</br>
+		👉 Mutable state means:</br>
+		
+		An object or variable whose value can be changed after it is created.</br>
+		✅ Simple Example</br>
+		int x = 10;</br>
+		x = 20;  // ✅ value changed → mutable</br>
+		
+		More Info...</br>
+		🚨 Mutable State in Parallel Streams (CRITICAL)</br>
+		❌ Dangerous Example</br>
+		List<Integer> list = new ArrayList<>();</br>
+
+		IntStream.range(1, 1000)
+		    .parallel()
+		    .forEach(list::add); // ❌ PROBLEM</br>
+		
+		❌ Why is this wrong?</br>
+		👉 Because:
+		
+		. Multiple threads try to modify same list
+		. Leads to:
+		
+			. Race conditions
+			. Missing data
+			. Corrupted results</br>
+			
+		✅ Correct Approach (Stateless)</br>
+		List<Integer> list =
+		    IntStream.range(1, 1000)
+		        .parallel()
+		        .boxed()
+		        .collect(Collectors.toList()); // ✅ SAFE
+        
+        👉 Here:
+
+		Each thread works independently
+		Framework handles merge safely</br>
+		
+		✅ Real-Life Analogy (Easy to Explain in Interview)</br>
+		👉 Imagine:
+		
+		5 people updating the same notebook at same time ❌</br>
+		vs</br>
+		5 people writing on separate papers and combining later ✅</br>
+		
+		
+     * @author Venkata.Pulipati
+     * @since Wednesday 13-May-2026 14:30:37
+     * @param transactions
+     */
+	private static void calculateAverageUsingCustomCollector(List<CitySales> transactions) {
+		Collector<CitySales, AvgAccumulator, Double> avgCollector =
+			    Collector.of(
+			        AvgAccumulator::new,                 // Supplier
+			        (acc, t) -> acc.add(t.getAmount()), // Accumulator
+			        AvgAccumulator::combine,            // Combiner
+			        AvgAccumulator::getAverage          // Finisher
+			    );
+
+		Map<String, Double> avgSalesByCity =
+			    transactions.parallelStream()
+			        .filter(t -> t.getAmount() > 100)
+			        .collect(Collectors.groupingBy(
+			            CitySales::getCity,
+			            avgCollector
+			        ));
+		
+		System.out.println("\nCalculate Average using custom Collector:");
+		avgSalesByCity.forEach((city, avg) -> System.out.println(city +"> Avg Sales: "+ avg));
+	}
 
 	private static void calculateAverage(List<CitySales> transactions) {
 		// ✅ Your logic

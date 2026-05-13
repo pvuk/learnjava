@@ -1,6 +1,4 @@
 package com.practice.java.collectors;
-import java.util.*;
-import java.util.stream.Collector;
 
 class AvgAccumulator {
     double sum = 0;
