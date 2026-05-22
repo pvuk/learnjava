@@ -75,9 +75,36 @@ public class ReduceUsingStreams {
 			Example: Calculating the sum of lengths of strings in a list.
 		 */
 		List<String> words = Arrays.asList("hello", "world", "java");
-        Integer totalLength = words.stream().reduce(0,
-            (partialSum, word) -> partialSum + word.length(),
-            (sum1, sum2) -> sum1 + sum2);
+		
+		/**
+		 * Code Ref:Interview:
+		 * ⚠️ Problem with this approach</br>
+			Even though it's correct, it's not recommended in most cases because:
+			1. Readability ❌</br>
+			
+			Harder to understand for others
+			More verbose than needed
+			
+			2. Not idiomatic (Java Streams philosophy) ❌</br>
+			
+			reduce() is meant for immutable reduction
+			When transforming + aggregating → use map + reduce or collect
+			
+			3. Easy to misuse ❌ (interview trap)</br>
+			
+			People often write incorrect combiners → bugs in parallel streams</br>
+		 */
+//        Integer totalLength = words.stream().reduce(0,
+//            (partialSum, word) -> partialSum + word.length(),
+//            (sum1, sum2) -> sum1 + sum2);
+		
+		long totalLength = words.stream().map(String::length).reduce(0, Integer::sum);//✅ Option 1: map + reduce (Clean)
+		/*
+		 * ✅ Most efficient
+			✅ No boxing/unboxing
+			✅ Preferred in real projects
+		 */
+//		int totalLength = words.stream().mapToInt(String::length).sum();//mapToInt + sum (BEST 🔥)
         System.out.println("Total length: " + totalLength);
 	}
 }
