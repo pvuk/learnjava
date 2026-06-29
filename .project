@@ -20,6 +20,13 @@
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>java</name>
+			<type>2</type>
+			<location>D:/Workspace/SpringToolSuite/learnjava/src/main/java</location>
+		</link>
+	</linkedResources>
 	<filteredResources>
 		<filter>
 			<id>1630407543115</id>
