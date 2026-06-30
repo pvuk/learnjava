@@ -36,10 +36,22 @@ public class MoveAllZeroToEndOfArray {
 	}
 
 	private static void usingStreams(int[] arr) {
+		//Code Ref: Interview: 👉 The rule of thumb: never reuse a stream. If you need the data multiple times, collect it into a collection/array first.
+//		IntStream nonZeros = Arrays.stream(arr).filter(x -> x != 0);
 		int[] result = IntStream.concat(Arrays.stream(arr).filter(x -> x != 0), // non-zeros first
 				Arrays.stream(arr).filter(x -> x == 0) // zeros later
 				).toArray();
 		System.out.println("Move Zero to end of Array using Streams: "+ Arrays.toString(result));
+		
+		//Example 2
+		long zeroCount = Arrays.stream(arr).filter(x -> x != 0).count();//Count zeros
+		
+		//Fix: The error you’re seeing (IllegalStateException: stream has already been operated upon or closed) happens because Java streams can only be consumed once. In your code, you’re trying to reuse the same IntStream nonZeros twice — once in result and again in result2. 
+		//		After the first .toArray() call, that stream is closed and cannot be reused.
+//		int[] result2 = IntStream.concat(nonZeros, IntStream.generate(() -> 0).limit(zeroCount)).toArray();
+		
+		int[] result2 = IntStream.concat(Arrays.stream(arr).filter(x -> x != 0), IntStream.generate(() -> 0).limit(zeroCount)).toArray();
+		System.out.println("Move Zero to end of Array using IntStream generate: "+ Arrays.toString(result2));
 	}
 
 	/**
@@ -69,6 +81,8 @@ public class MoveAllZeroToEndOfArray {
 	 */
 	private static void usingSingleLoop(int[] arr) {
 		
+		int[] arr2 = arr.clone();
+		
 		int temp, count = 0;
 		for(int i = 0; i < arr.length; i++) {
 			if(arr[i] != 0) {
@@ -79,6 +93,23 @@ public class MoveAllZeroToEndOfArray {
 			}
 		}
 		System.out.println("usingSingleLoop - After moved all zero's to end of Array: \n" + Arrays.toString(arr) +"\n");
+		
+		//Example 2
+		int index = 0; // Position to place non-zero elements
+
+        // Move non-zeros forward
+        for (int num : arr2) {
+            if (num != 0) {
+            	arr2[index++] = num;
+            }
+        }
+
+        // Fill remaining with zeros
+        while (index < arr2.length) {
+        	arr2[index++] = 0;
+        }
+
+        System.out.println(Arrays.toString(arr2));
 	}
 
 	private static void usingMultipleLoops(int[] arr) {
