@@ -14,7 +14,7 @@ import java.lang.reflect.InvocationTargetException;
 	
 	
 	<h3>6️⃣ Why Reflection Can Break Singleton</h3>
- *
+ *	Reflection can access private constructors and create new instances.</br>
  * <table border="1">
  *   <tr>
  *     <th>Reason</th>

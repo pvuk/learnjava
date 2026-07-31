@@ -2,6 +2,9 @@ package com.java.interview.designpatterns;
 import java.io.*;
 
 /**
+ * Serialization/Deserialization</br>
+   When a Singleton is serialized and then deserialized, a new object can be created.</br>
+   
  * Serialization can break the Singleton pattern because Java’s deserialization process can create a new instance of a class, bypassing the Singleton’s private constructor.
  *	Below is a clear, step‑by‑step explanation with code.
 	

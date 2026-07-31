@@ -5,7 +5,6 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Optional;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
 /**
@@ -17,32 +16,23 @@ import java.util.stream.Collectors;
 public class SecondDuplicateCharacterInWord {
 	public static void main(String[] args) {
 		String str = "Java is awesome";//2nd duplicate character
-		Map<Object,Long> collect = Arrays.asList(str.split("")).stream().collect(Collectors.groupingBy(s->s, LinkedHashMap::new, Collectors.counting()));//maintaining order LinkedHashMap
-		AtomicInteger count = new AtomicInteger(1);
+		Map<Object, Long> collect = Arrays.asList(str.split("")).stream()
+				.collect(Collectors.groupingBy(s -> s, LinkedHashMap::new, Collectors.counting()));// maintaining order LinkedHashMap
 		collect.forEach((k, v) -> {
 			if(v > 1)
-				if(count.incrementAndGet() == 2) {
-					System.out.println("2nd Duplicate Char: "+ k +", Repeated times: "+ v);
-				}
+				System.out.println("2nd Duplicate Char: "+ k +", Repeated times: "+ v);
 		});
 		
 		//Example 2
-		Optional<Entry<String, Long>> first = Arrays.asList(str.split("")).stream().collect(Collectors.groupingBy(s->s, Collectors.counting()))
-				.entrySet().stream()
-				.skip(0)//- Use .skip(0) to get the second duplicate.
-				.findFirst();
-		System.out.println("2nd duplicate character: "+ (first.isPresent() ? first.get().getKey() : null));
-		
-		Map<Object,Long> mapCollect = Arrays.asList(str.split("")).stream()
+		Optional<Entry<String, Long>> optionalEntry = Arrays.asList(str.split("")).stream()
 				.filter(val -> !val.equals(" "))
-				.collect(Collectors.groupingBy(s->s, LinkedHashMap::new, Collectors.counting()));
-		AtomicInteger countDuplicate = new AtomicInteger(0);
-		mapCollect.forEach((k, v) -> {
-			if(v > 1) {
-				if(countDuplicate.incrementAndGet() == 2) {
-					System.out.println("Exclude Spaces: 2nd Duplicate Char: "+ k +", Repeated times: "+ v);
-				}
-			}
-		});
+				.collect(Collectors.groupingBy(s->s, LinkedHashMap::new, Collectors.counting()))
+				.entrySet().stream()
+				.filter(entry -> entry.getValue() > 1)// only duplicates
+				.skip(1)//- <-- skip the first duplicate, to get the second duplicate.
+				.findFirst();
+//		System.out.println("Exclude Spaces: 2nd Duplicate Char: "+ (optionalEntry.isPresent() ? optionalEntry.get().getKey() : null));
+		//or
+		optionalEntry.ifPresent(entry -> System.out.println("Exclude Spaces: 2nd Duplicate Char: "+ entry.getKey() +", Repeated times: "+ entry.getValue()));
 	}
 }
