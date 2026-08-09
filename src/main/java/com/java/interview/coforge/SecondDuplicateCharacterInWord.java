@@ -20,7 +20,7 @@ public class SecondDuplicateCharacterInWord {
 				.collect(Collectors.groupingBy(s -> s, LinkedHashMap::new, Collectors.counting()));// maintaining order LinkedHashMap
 		collect.forEach((k, v) -> {
 			if(v > 1)
-				System.out.println("2nd Duplicate Char: "+ k +", Repeated times: "+ v);
+				System.out.println("Duplicate Char: "+ k +", Repeated times: "+ v);
 		});
 		
 		//Example 2
@@ -29,7 +29,7 @@ public class SecondDuplicateCharacterInWord {
 				.collect(Collectors.groupingBy(s->s, LinkedHashMap::new, Collectors.counting()))
 				.entrySet().stream()
 				.filter(entry -> entry.getValue() > 1)// only duplicates
-				.skip(1)//- <-- skip the first duplicate, to get the second duplicate.
+				.skip(1)//- <-- skip the first duplicate, get the second duplicate.
 				.findFirst();
 //		System.out.println("Exclude Spaces: 2nd Duplicate Char: "+ (optionalEntry.isPresent() ? optionalEntry.get().getKey() : null));
 		//or
