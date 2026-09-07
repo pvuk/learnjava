@@ -6,9 +6,9 @@ class OddThread extends Thread
 {
     int limit;
      
-    sharedPrinter printer;
+    SharedPrinter printer;
      
-    public OddThread(int limit, sharedPrinter printer)
+    public OddThread(int limit, SharedPrinter printer)
     {
         this.limit = limit;
          
@@ -36,9 +36,9 @@ class EvenThread extends Thread
 {
     int limit;
      
-    sharedPrinter printer;
+    SharedPrinter printer;
      
-    public EvenThread(int limit, sharedPrinter printer)
+    public EvenThread(int limit, SharedPrinter printer)
     {
         this.limit = limit;
          
@@ -59,7 +59,7 @@ class EvenThread extends Thread
     }
 }
  
-class sharedPrinter
+class SharedPrinter
 {
     //A boolean flag variable to check whether odd number is printed or not
     //Initially it is false.
@@ -145,7 +145,7 @@ public class PrintOddAndEvenNumbersByTwoThreadsInJava
 {
     public static void main(String[] args) 
     {
-        sharedPrinter printer = new sharedPrinter();
+        SharedPrinter printer = new SharedPrinter();
          
         OddThread oddThread = new OddThread(20, printer);
          

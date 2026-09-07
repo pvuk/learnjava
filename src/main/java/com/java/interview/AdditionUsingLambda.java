@@ -18,7 +18,6 @@ public class AdditionUsingLambda {
 		sum.accept(10, 20);
 
 		int a = 10, b = 20;
-		System.out.println("Normal Java7 Add: " + a + b);
 		System.out.println("Normal Java7 Add: " + (a + b));
 	}
 }

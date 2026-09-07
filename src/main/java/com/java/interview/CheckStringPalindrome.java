@@ -8,6 +8,15 @@ package com.java.interview;
  */
 public class CheckStringPalindrome {
 
+	public static void main(String[] args) {
+		String str = "geeks";// abba
+
+		if (isPalindrome(str))
+			System.out.print("Given String: "+ str +" is Palindrome");
+		else
+			System.out.print("Given String: "+ str +" is not Palindrome");
+	}
+
 	// Function that returns true if
 	// str is a palindrome
 	static boolean isPalindrome(String str) {
@@ -32,17 +41,7 @@ public class CheckStringPalindrome {
 		// Given string is a palindrome
 		return true;
 	}
-
-	// Driver code
-	public static void main(String[] args) {
-		String str = "geeks";// abba
-
-		if (isPalindrome(str))
-			System.out.print("Yes");
-		else
-			System.out.print("No");
-	}
-
+	
 	/**
 	 * Java program to illustrate checking of a string if its palindrome or not using reverse function
 	 * @param s

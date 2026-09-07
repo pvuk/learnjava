@@ -17,5 +17,10 @@ public class ListToMapUsingLambda {
 		System.out.println("Result1: "+ result1);
 		Map<String, Integer> result2 = list.stream().collect(Collectors.toMap(x -> x.getWebSites(), x -> x.getValue()));
 		System.out.println("Result2: "+ result2);
+		
+        list.add(new Hosting(6, "mkyong.com", 2));
+        list.add(new Hosting(7, "aws.amazon.com", 100000));
+		Map<String, List<Hosting>> result3 = list.stream().collect(Collectors.groupingBy(Hosting::getWebSites));//key, list records
+		System.out.println("Result3: "+ result3);
 	}
 }

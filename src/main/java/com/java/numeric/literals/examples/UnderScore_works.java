@@ -5,7 +5,7 @@ package com.java.numeric.literals.examples;
  * @author venkataudaykiranp
  * 
  * <p>
- * 	<a href="https://www.geeksforgeeks.org/using-underscore-numeric-literals-java/">From 1.7v onwards we can use ‘_’ under score symbols between digits of numeric literals.</a> You can place underscores only between digits; you <strong>cannot place</strong> underscores in the following places:</p>
+ * 	<a href="https://www.geeksforgeeks.org/using-underscore-numeric-literals-java/">From 1.7v onwards we can use ï¿½_ï¿½ under score symbols between digits of numeric literals.</a> You can place underscores only between digits; you <strong>cannot place</strong> underscores in the following places:</p>
 <ul>
 <li>In positions where a string of digits is expected</li>
 <li>We can use under score symbols only between the digits if we are using else we  will get compile time error. </li>
@@ -41,8 +41,8 @@ public class UnderScore_works
 { 
     public static void main(String args[])  
     { 
-        int _ = 10; //'_' underscore identifier works only in Java8
-        System.out.println(_); 
+//        int _ = 10; //'_' underscore identifier works only in Java8
+//        System.out.println(_); 
         
         //https://www.javatpoint.com/java-numeric-literals-with-underscore
         //You cannot use underscore at the beginning or end of a number.
