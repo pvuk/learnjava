@@ -41,9 +41,20 @@ public class StringReverse {
         System.out.println("Original String: " + str);
         System.out.println("Reversed String: " + reversedStr);
 
-		
+        System.out.println("Reverse a String without built-in reverse: "+ reverse_a_string_without_built_in_reverse(str));
 	}
 
+	public static String reverse_a_string_without_built_in_reverse(String s) {
+        char[] arr = s.toCharArray();
+        int left = 0, right = arr.length - 1;
+        while (left < right) {
+            char temp = arr[left];
+            arr[left++] = arr[right];
+            arr[right--] = temp;
+        }
+        return new String(arr);
+    }
+	
 	static void printReverse(String s, int pos) {
 		if (pos > -1) {
 			System.out.print(s.charAt(pos));

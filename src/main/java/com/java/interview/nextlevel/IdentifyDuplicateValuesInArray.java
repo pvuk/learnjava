@@ -3,6 +3,7 @@ package com.java.interview.nextlevel;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -113,6 +114,13 @@ public class IdentifyDuplicateValuesInArray {
         }
 
         System.out.println("Duplicates: " + duplicates);
+        
+        List<String> names = List.of("A", "B", "A", "C", "B");
+        Set<String> seen1 = new HashSet<>();
+        Set<String> duplicates1 = names.stream()
+                .filter(n -> !seen1.add(n))
+                .collect(Collectors.toSet());
+        System.out.println("Duplicates filter in List using Java 8: "+ duplicates1);
     }
 
 }

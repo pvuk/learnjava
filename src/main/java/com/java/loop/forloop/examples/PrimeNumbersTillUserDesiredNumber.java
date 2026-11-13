@@ -29,18 +29,30 @@ public class PrimeNumbersTillUserDesiredNumber {
 		Scanner scanner = null;
 		int num = 0;
 		try {
-			System.out.println("You can enter 100 number or more");
-			System.out.print("Please enter Number: ");
+			System.out.println("Prime numbers will print untill entered number");
+			System.out.println("Please enter Number: ");
 			scanner = new Scanner(System.in);
-			num = scanner.nextInt();
-			for (int i = 1; i <= num; i++) {
+			int currentNumber = scanner.nextInt();
+			for (int i = 1; i <= currentNumber; i++) {
 				// prime number check
 				boolean isPrime = isPrime(i);
 				if (isPrime) {
 					System.out.print(i + " ");
 				}
-				//System.out.print("\nSqrt of "+ i +": "+ (int) Math.sqrt(i) +" ");
 			}
+			
+			System.out.println("\nExample: 2");
+			
+			int prime = 7, div = 2;
+			boolean flag = false;
+			while(div <= prime / 2) {
+				if(prime % div == 0) {
+					flag = true;
+					break;
+				}
+				div++;
+			}
+			System.out.print("Number "+ prime +" is "+ (flag ? "Not Prime" : "Prime"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
